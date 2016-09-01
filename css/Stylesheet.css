@@ -1,0 +1,49 @@
+#main-title
+{
+	Background-color:green;
+	padding:10px 2%;
+	font-size:20px;
+	color:white;
+	box-shadow: 2px 2px 4px #000000
+}
+
+.title-menu
+{
+	margin:50px;
+	text-decoration:none;
+	list-style-type: none;
+
+}
+#title-menu 
+{
+	list-style-type: none;
+
+}
+#title-menu li
+{
+	display:inline;
+	
+}
+
+#title-menu li a:hover
+{
+	color:white;
+	background-color:#006400;
+	padding:5px;
+	box-shadow: 2px 2px 4px #fff;
+}
+
+#main-body
+{
+	font-size:20px;
+}
+#main-footer
+{
+	Background-color:green;
+	padding:10px 2%;
+	font-size:20px;
+	color:white;
+	box-shadow: 2px -2px 4px #000000;
+	float:bottom;
+	clear:both;
+}
