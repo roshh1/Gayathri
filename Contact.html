@@ -10,17 +10,42 @@
 
 <body>
 	
-	<header id="main-title">
-		<ul id="title-menu">
-			<li><a class="title-menu" href="Home.html"> Home</a></li>
-			<li><a class="title-menu" href="About.html"> About&nbsp;US</a></li>
-			<li><a class="title-menu" href="Products.html"> Products</a></li>
-			<li><a class="title-menu" href="Services.html"> Other&nbsp;Services</a></li>
-			<li><a class="title-menu" href="Contact.html"> Contact</a></li>
+	<header id="heading">
+
+		<ul class="title-menu col-12">
+			<li><a class="logo" href="Home.html"> <img src="img/logo.png" width="150px"></a></li>
+			<li><a class="title-list" href="Home.html"> Home</a></li>
+			<li><a class="title-list" href="About.html"> About&nbsp;US</a></li>
+			<li><a class="title-list" href="Products.html"> Products</a></li>
+			<li><a class="title-list" href="Services.html"> Other&nbsp;Services</a></li>
+			<li><a class="title-list" href="Contact.html"> Contact</a></li>
 		</ul>
 	</header>
 	
 	<main id="main-body">
+	
+		<div class="contact-info col-4">			
+			<h3>Contact US</h3>
+			<address>
+				240 SC Road,<br>
+				Bengaluru, Karnataka 560009,<br>
+				India
+			</address>
+			<h3>Phone Number:</h3>
+			<p>Office: <u>+91 80 2225 8677</u><br>Mobile: <u>+91 98441 62429</u>
+			</p>
+			<h3>Hours of Operation</h3>
+			<p>
+			
+			Tuesday to friday : 10AM - 8PM<br>
+			Monday: Closed </p>
+		</div>
+		<div class=" contact-map col-4">
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;'>
+			<div id='gmap_canvas' style='height:400px;width:500px;'></div>
+			<div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!									Click here									Visit our website!</a></small></div>
+			<div><small><a href="https://top10geeks.com/top-10-best-dslr-cameras-beginners-2016/">Best DSLR cameras of 2016</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(12.9798676,77.57642540000006),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.9798676,77.57642540000006)});infowindow = new google.maps.InfoWindow({content:'<strong>Gayathri Gallerie</strong><br>5th main cross, Gandhi Nagar, Bengaluru, Karnataka 560009, India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</div>
 
 		<form id="contact_form" class="col-4" action="#" method="POST" enctype="multipart/form-data">
 			<h3>Send us a massage</h3>
@@ -39,23 +64,6 @@
 			<input id="submit_button" type="submit" value="Send email" />
 		</form>
 		
-		<div class="contact-info col-8">			
-			<h3>Contact US</h3>
-			<address>
-				5th main cross, Gandhi Nagar,<br>
-				Bengaluru, Karnataka 560009,<br>
-				India
-			</address>
-			<h3>Phone Number:</h3>
-			<p>Office: <u>+91 80 2225 8677</u><br>Mobile: <u>+91 98441 62429</u>
-			</p>
-			<h3>Hours of Operation</h3>
-			<p>
-			
-			Tuesday to friday : 10AM - 8PM<br>
-			Monday: Closed </p>
-		</div>
-	
 	
 	</main>
 	

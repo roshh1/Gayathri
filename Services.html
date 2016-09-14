@@ -10,13 +10,15 @@
 
 <body>
 	
-	<header id="main-title">
-		<ul id="title-menu">
-			<li><a class="title-menu" href="Home.html"> Home</a></li>
-			<li><a class="title-menu" href="About.html"> About&nbsp;US</a></li>
-			<li><a class="title-menu" href="Products.html"> Products</a></li>
-			<li><a class="title-menu" href="Services.html"> Other&nbsp;Services</a></li>
-			<li><a class="title-menu" href="Contact.html"> Contact</a></li>
+	<header id="heading">
+
+		<ul class="title-menu col-12">
+			<li><a class="logo" href="Home.html"> <img src="img/logo.png" width="150px"></a></li>
+			<li><a class="title-list" href="Home.html"> Home</a></li>
+			<li><a class="title-list" href="About.html"> About&nbsp;US</a></li>
+			<li><a class="title-list" href="Products.html"> Products</a></li>
+			<li><a class="title-list" href="Services.html"> Other&nbsp;Services</a></li>
+			<li><a class="title-list" href="Contact.html"> Contact</a></li>
 		</ul>
 	</header>
 	
@@ -25,16 +27,50 @@
 		<div class="col-3 sidebar">
 		<ul  id= "sidebar-itemgrp">
 		<h3>Other Services</h3>
-			<li><a class="sidebar-item" href=""> Photo&nbsp;Printing</a></li>
-			<li><a class="sidebar-item" href=""> Photo&nbsp;Lamination</a></li>
-			<li><a class="sidebar-item" href=""> Photo&nbsp;shooting packages</a></li>
-			<li><a class="sidebar-item" href=""> Photo&nbsp;Albums</a></li>
-			<li><a class="sidebar-item" href=""> Dimond&nbsp;Box</a></li>
-			<li><a class="sidebar-item" href=""> Silver&nbsp;Moulded&nbsp;god&nbsp;photos</a></li>
+			<li><a data-content="txt-printing" id="printing" class="sidebar-item" href="#"> Photo Printing</a></li>
+			<li><a data-content="txt-lamination" id="lamination" class="sidebar-item" href="#"> Photo Lamination</a></li>
+			<li><a data-content="txt-shooting" id="shooting" class="sidebar-item" href="#"> Photo shooting packages</a></li>
+			<li><a data-content="txt-albums" id="albums" class="sidebar-item" href="#"> Photo Albums</a></li>
+			<li><a data-content="txt-dimond" id="dimond" class="sidebar-item" href="#"> Dimond Box</a></li>
+			<li><a data-content="txt-silver" id="silver" class="sidebar-item" href="#"> Silver Moulded god photos</a></li>
 		</ul>
 		</div>
-		<h3>Other Services</h3>
-		<img src="http://makelyhome.com/wp-content/uploads/2012/01/How-To-Layered-Picture-Frames-3.jpg"/>
+
+		<div id="other-services" class="services col-9">
+			<h1>Other Services</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
+
+		
+		<div id="txt-printing" class="hide services col-9">
+			<h3>Photo Printing</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
+
+		<div id="txt-lamination" class="hide services col-9">
+			<h3>Photo Lamination</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
+
+		<div id="txt-shooting" class="hide services col-9">
+			<h3>Photo shooting packages</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
+
+		<div id="txt-albums" class="hide services col-9">
+			<h3>Photo Albums</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
+
+		<div id="txt-dimond" class="hide services col-9">
+			<h3>Dimond Box</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
+
+		<div id="txt-silver" class="hide services col-9">
+			<h3>Silver Moulded god photos</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum gravida enim, at luctus massa. Donec semper urna orci. Quisque ligula leo, tempus id molestie et, egestas quis eros. Vivamus rutrum lacus lectus, eu dictum neque consequat eget. Pellentesque tempus turpis ac ligula viverra, vel finibus eros semper. Phasellus commodo nunc vel condimentum commodo. In dui ipsum, lacinia et lectus vel, feugiat dapibus erat. Mauris metus lacus, sodales et laoreet sollicitudin, pretium et ante. Integer sapien nibh, vulputate ut auctor vel, dignissim in risus. Pellentesque at aliquet ex, in malesuada leo. Praesent eleifend facilisis posuere. Suspendisse finibus diam nec tempor ultrices.	</p> 
+		</div>
 
 
 	</main>
@@ -42,6 +78,7 @@
 	<footer id="main-footer">
 		<p>This is the footer</p>
 	</footer>
+	<script type="text/javascript" src="js/services.js"></script>
 	
 </body>
 

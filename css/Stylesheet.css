@@ -1,52 +1,49 @@
 
-body
+
+body {background-image: url("../img/bg_2.jpg");}
+
+* { box-sizing: border-box;}
+
+.logo
 {
-	background-image: url("../img/bg_2.jpg");
+	float: left;
+	margin: 6px;
 }
-* {
-    box-sizing: border-box;
-}
-#main-title
-{
-  background: #450c48; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#210422, #450c48, #210422); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#210422, #450c48, #210422); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#210422, #450c48, #210422); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#210422, #450c48, #210422); /* Standard syntax */
-
-
-
-	padding:10px 2%;
-	font-size:20px;
-	color:white;
-	box-shadow: 2px 2px 4px #000000;
-}
-
 .title-menu
 {
-	margin:50px;
-	text-decoration:none;
-	color: yellow;
 	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	background: #450c48; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#210422, #450c48, #210422); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#210422, #450c48, #210422); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#210422, #450c48, #210422); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#210422, #450c48, #210422); /* Standard syntax */
 }
-#title-menu {list-style-type: none;}
-#title-menu li {display:inline;}
-
-#title-menu li a:hover
+.title-menu li {float: left;}
+.title-list
 {
-	color:white;
+	padding: 55px 30px 10px 30px;
+	display: block;
+	font-size: 20px;
+	color: yellow;
+	text-align: center;
+	text-decoration: none;
 }
+
+.title-list:hover {	color: white;}
 
 #main-body
 {
 	font-size:20px;
-	color: white;
+	color: #b50c48;
 }
 /*    Product style starts here */
 .sidebar
 {
 	height:auto;
-	background-color: #582b70;
+	background-color: #2b1250;
+	border-radius: 10px;
 	float: left;
 	margin: 20px 0px;
 	}
@@ -56,27 +53,16 @@ body
 	color: yellow;
 	font-size: 18px;
 }
+.sidebar-item:hover {color: white;}
+#sidebar-itemgrp {list-style-type:none;}
+#sidebar-itemgrp li {padding: 50px 0px;	}
 
-#sidebar-itemgrp
-{
-		list-style-type:none;
-	
-}
-#sidebar-itemgrp li
-{
-	padding: 50px 0px;	
-}
-
-.product-itemgrp {list-style-type: none;}
-.product-itemgrp div {display:inline;}
-.product-item  {display:inline;}
-
+/*frames css starts here*/
 .frames
 {
-	background-color: #450566;
-	opacity: 0.5;
-	border: 20px hidden #0e031c ;
-	margin: 30px;
+	background-color: #2b1250;
+	border-radius: 10px;
+	margin: 1%;
 	float: left;
 	text-align: center;
 	padding: 20px 0px; 
@@ -84,22 +70,22 @@ body
 	text-decoration:none;
 }
 .frames a { text-decoration:none;}
+.frames:hover
+{
+	background-color: #231250; 
+}
 .frame-name
 {
 	color: black;
 }
 .frame-img
 {
-	position: relative;
+	background-image: url('../img/your_img.jpg');
+	background-size: 100%;
 	box-shadow: 3px 3px 4px #000000;
-	z-index: 1;
+
 }
-.frame-bg
-{
-	position: absolute;
-	top: 0px;
-	z-index: -1;
-}
+
 .frame-price
 {
 	color: grey;
@@ -113,11 +99,13 @@ body
 	padding: 10px 0px;
 	margin: 0px 10%; 
 }
+.frame-select:hover
+{background-color: #650c48;}
 
-
+/* Contact us starts here*/
 #contact_form
 {
-	background-color: #582b70;
+	background-color: #2b1250;
 	padding: 5%;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -125,9 +113,31 @@ body
 }
 .contact-info
 {
- 	float: left;
- 	padding-left: 30px; 
+	
+	float: left;
+ 	padding: 5%; 
  	margin-top: 30px;
+}
+.contact-map
+{
+	float: left;
+	padding: 5% 0px;
+}
+
+/* About starts here*/
+.shop-img
+{
+	background-color: #2b1250;
+	border-radius: 10px;
+	float: left;
+	padding: 5%;
+	margin-top: 100px;
+
+}
+.about-txt
+{
+	float: left;
+	padding: 5%;
 }
 
 
@@ -144,8 +154,18 @@ body
 	color:white;
 	float:bottom;
 	clear:both;
-
 }
+/* Other services scripts */
+
+.hide {display: none;}
+.services
+{
+	float: left;
+	padding: 100px;
+}
+
+/* css Responsive design */
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -163,8 +183,13 @@ body
     [class*="col-"] {
         width: 100%;
     }
-    .title-menu
-	{display: block;
-		text-align:center;
-		margin: 0px;
-		}
+
+    .title-list
+    {
+    	padding: 10px;
+    }
+    .logo
+    {
+    	padding: 0px 250px;
+    	text-align: center;
+    }
