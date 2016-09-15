@@ -27,51 +27,133 @@
 		<div class="sidebar col-2">
 		<ul  id= "sidebar-itemgrp">
 			<h3>Products</h3>
-			<li><a class="sidebar-item" href=""> God photo frame</a></li>
-			<li><a class="sidebar-item" href=""> Lighting Box </a></li>
-			<li><a class="sidebar-item" href=""> Ready to hang Frames</a></li>
-			<li><a class="sidebar-item" href=""> Collage Frames</a></li>
+			<li><a class="sidebar-item" href="$"> God photo frame</a></li>
+			<li><a class="sidebar-item" href="$"> Lighting Box </a></li>
+			<li><a class="sidebar-item" href="$"> Ready to hang Frames</a></li>
+			<li><a class="sidebar-item" href="$"> Collage Frames</a></li>
 		</ul>
 		</div>
 		<h3>Products</h3>
-		<div class="frames col-3">
-			<a href="">
-			<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
-			<h4 class="frame-name">Frame Name</h4>
-			<p class="frame-price">Price</p>
-			<h4 class="frame-select">Select Frame</h4>
-			</a>
+		
+		<div id="frame-1">
+			<div id="fsmall-1" class="frames col-3">
+				<a data-exp="fexp-1" data-hide="fsmall-1" id="fbutton-1" href="#">
+				<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
+				<h4 class="frame-name">First Frame</h4>
+				<p class="frame-price">Price</p>
+				<h4 class="frame-select">Select Frame</h4>
+				</a>
+			</div>
+
+			<div id="fexp-1" class="hide frame-expand col-9">
+				<img class="fexp-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
+				<h4 class="frame-name">First Frame</h4>
+				<p>This is the first frame discription</p>
+				<p>Product Number : 01</p>
+				<p class="frame-price">Price</p>
+				<select>
+				  <option value="select-size">Select Size</option>
+				  <option value="size-1">8 X 12</option>
+				  <option value="size-2">10 X 12</option>
+				  <option value="size-3">bigger</option>
+				</select>
+				<select>
+				  <option value="mat">Select Mat Color</option>
+				  <option value="red">red</option>
+				  <option value="blue">blue</option>
+				  <option value="green">green</option>
+				</select>
+				<p>Final price</p>
+				<form>
+	 			 <label for="count-no">number of frames</label>
+				 <input type="text" id="count" name="count" value="1">
+				</form>
+				<a class="frame-select" href="">Add to Cart</a>
+			</div>
 		</div>
-		<div class="frames col-3">
-			<a href="">
-			<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
-			<h4 class="frame-name">Frame Name</h4>
-			<p class="frame-price">Price</p>
-			<h4 class="frame-select">Select Frame</h4>
-			</a>
+
+		<div id="frame-2">
+			<div id="fsmall-2" class="frames col-3">
+				<a data-exp="fexp-2" data-hide="fsmall-2" id="fbutton-2" href="#">
+				<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
+				<h4 class="frame-name">Second Frame</h4>
+				<p class="frame-price">Price</p>
+				<h4 class="frame-select">Select Frame</h4>
+				</a>
+			</div>
+
+			<div id="fexp-2" class="hide frame-expand col-9">
+				<img class="fexp-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
+				<h4 class="frame-name">Second Frame</h4>
+				<p>This is the second frame discription</p>
+				<p>Product Number : 01</p>
+				<p class="frame-price">Price</p>
+				<select>
+				  <option value="select-size">Select Size</option>
+				  <option value="size-1">8 X 12</option>
+				  <option value="size-2">10 X 12</option>
+				  <option value="size-3">bigger</option>
+				</select>
+				<select>
+				  <option value="mat">Select Mat Color</option>
+				  <option value="red">red</option>
+				  <option value="blue">blue</option>
+				  <option value="green">green</option>
+				</select>
+				<p>Final price</p>
+				<form>
+	 			 <label for="count-no">number of frames</label>
+				 <input type="text" id="count" name="count" value="1">
+				</form>
+				<a class="frame-select" href="">Add to Cart</a>
+			</div>
 		</div>
-		<div class="frames col-3">
-			<a href="">
-			<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
-			<h4 class="frame-name">Frame Name</h4>
-			<p class="frame-price">Price</p>
-			<h4 class="frame-select">Select Frame</h4>
-			</a>
+
+		<div id="frame-3">
+			<div id="fsmall-3" class="frames col-3">
+				<a data-exp="fexp-3" data-hide="fsmall-3" id="fbutton-3" href="#">
+				<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
+				<h4 class="frame-name">Second Frame</h4>
+				<p class="frame-price">Price</p>
+				<h4 class="frame-select">Select Frame</h4>
+				</a>
+			</div>
+
+			<div id="fexp-3" class="hide frame-expand col-9">
+				<img class="fexp-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
+				<h4 class="frame-name">Second Frame</h4>
+				<p>This is the second frame discription</p>
+				<p>Product Number : 01</p>
+				<p class="frame-price">Price</p>
+				<select>
+				  <option value="select-size">Select Size</option>
+				  <option value="size-1">8 X 12</option>
+				  <option value="size-2">10 X 12</option>
+				  <option value="size-3">bigger</option>
+				</select>
+				<select>
+				  <option value="mat">Select Mat Color</option>
+				  <option value="red">red</option>
+				  <option value="blue">blue</option>
+				  <option value="green">green</option>
+				</select>
+				<p>Final price</p>
+				<form>
+	 			 <label for="count-no">number of frames</label>
+				 <input type="text" id="count" name="count" value="1">
+				</form>
+				<a class="frame-select" href="">Add to Cart</a>
+			</div>
 		</div>
-		<div class="frames col-3">
-			<a href="">
-			<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
-			<h4 class="frame-name">Frame Name</h4>
-			<p class="frame-price">Price</p>
-			<h4 class="frame-select">Select Frame</h4>
-			</a>
-		</div>
+
 
 	</main>
 	
 	<footer id="main-footer">
 		<p>This is the footer</p>
 	</footer>
+
+	<script type="text/javascript" src="js/frames.js"></script>
 	
 </body>
 

@@ -29,7 +29,7 @@ function pickLink () {
 	var pick = document.getElementById(pickId);
 	
 	if ( pick.className === "hide") {
-		pick.className = "";
+		pick.className = "services col-9";
 	}
 	else {
 		pick.className = "hide";

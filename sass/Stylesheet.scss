@@ -199,17 +199,3 @@ body {background-image: url("../img/bg_2.jpg");}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-    }
-
-    .title-list
-    {
-    	padding: 10px;
-    }
-    .logo
-    {
-    	padding: 0px 250px;
-    	text-align: center;
-    }
