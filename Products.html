@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Gayathri Gallerie</title> 
 	<link type="text/css"  rel="stylesheet" href="css/Stylesheet_normalize.css">
-	<link type="text/css" rel="stylesheet" href="css/Stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="sass/Stylesheet.css">
 	
 </head>
 
@@ -16,7 +16,7 @@
 			<li><a class="logo" href="Home.html"> <img src="img/logo.png" width="150px"></a></li>
 			<li><a class="title-list" href="Home.html"> Home</a></li>
 			<li><a class="title-list" href="About.html"> About&nbsp;US</a></li>
-			<li><a class="title-list" href="Products.html"> Products</a></li>
+			<li><a class="active-p" href="Products.html"> Products</a></li>
 			<li><a class="title-list" href="Services.html"> Other&nbsp;Services</a></li>
 			<li><a class="title-list" href="Contact.html"> Contact</a></li>
 		</ul>
@@ -27,16 +27,16 @@
 		<div class="sidebar col-2">
 		<ul  id= "sidebar-itemgrp">
 			<h3>Products</h3>
-			<li><a class="sidebar-item" href="$"> God photo frame</a></li>
-			<li><a class="sidebar-item" href="$"> Lighting Box </a></li>
-			<li><a class="sidebar-item" href="$"> Ready to hang Frames</a></li>
-			<li><a class="sidebar-item" href="$"> Collage Frames</a></li>
+			<li><a class="sidebar-item" href=""> God photo frame</a></li>
+			<li><a class="sidebar-item" href=""> Lighting Box </a></li>
+			<li><a class="sidebar-item" href=""> Ready to hang Frames</a></li>
+			<li><a class="sidebar-item" href=""> Collage Frames</a></li>
 		</ul>
 		</div>
 		<h3>Products</h3>
 		
 		<div id="frame-1">
-			<div id="fsmall-1" class="frames col-3">
+				<div id="fsmall-1" class="frames col-3">
 				<a data-exp="fexp-1" data-hide="fsmall-1" id="fbutton-1" href="#">
 				<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
 				<h4 class="frame-name">First Frame</h4>
@@ -46,6 +46,7 @@
 			</div>
 
 			<div id="fexp-1" class="hide frame-expand col-9">
+			<div> <a data-exp="fexp-1" data-hide="fsmall-1" id="close-1" class="close" href="#">close</a></div>
 				<img class="fexp-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
 				<h4 class="frame-name">First Frame</h4>
 				<p>This is the first frame discription</p>
@@ -83,9 +84,10 @@
 			</div>
 
 			<div id="fexp-2" class="hide frame-expand col-9">
+			<div> <a data-exp="fexp-2" data-hide="fsmall-2" id="close-2" class="close" href="#">close</a></div>
 				<img class="fexp-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
 				<h4 class="frame-name">Second Frame</h4>
-				<p>This is the second frame discription</p>
+				<p>This is the Second frame discription</p>
 				<p>Product Number : 01</p>
 				<p class="frame-price">Price</p>
 				<select>
@@ -113,16 +115,17 @@
 			<div id="fsmall-3" class="frames col-3">
 				<a data-exp="fexp-3" data-hide="fsmall-3" id="fbutton-3" href="#">
 				<img class="frame-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
-				<h4 class="frame-name">Second Frame</h4>
+				<h4 class="frame-name">Third Frame</h4>
 				<p class="frame-price">Price</p>
 				<h4 class="frame-select">Select Frame</h4>
 				</a>
 			</div>
 
 			<div id="fexp-3" class="hide frame-expand col-9">
+			<div> <a data-exp="fexp-3" data-hide="fsmall-3" id="close-3" class="close" href="#">close</a></div>
 				<img class="fexp-img" src="img/frame_sample.png" alt="Lighting box" width="50%" height="50%"/>
-				<h4 class="frame-name">Second Frame</h4>
-				<p>This is the second frame discription</p>
+				<h4 class="frame-name">Third Frame</h4>
+				<p>This is the Third frame discription</p>
 				<p>Product Number : 01</p>
 				<p class="frame-price">Price</p>
 				<select>

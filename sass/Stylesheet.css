@@ -4,6 +4,14 @@ body {
 * {
   box-sizing: border-box; }
 
+.close {
+  float: right;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  margin: 2px; }
+
 .logo {
   float: left;
   margin: 6px; }
@@ -13,29 +21,41 @@ body {
   overflow: hidden;
   margin: 0;
   background: #450c48;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#210422, #450c48, #210422);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#210422, #450c48, #210422);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#210422, #450c48, #210422);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#210422, #450c48, #210422);
-  /* Standard syntax */ }
+  background: linear-gradient(#210422, #450c48, #210422); }
+  .title-menu li {
+    float: left; }
 
-.title-menu li {
-  float: left; }
-
-.title-list {
-  padding: 55px 30px 10px 30px;
+.active-p {
+  border: 10px solid transparent;
+  -webkit-border-image: url("../img/activepage.png") 30 stretch;
+  -o-border-image: url("../img/activepage.png") 30 stretch;
+  border-image: url("../img/activepage.png") 30 stretch;
+  margin: 45px 30px 0px 30px;
   display: block;
   font-size: 20px;
   color: yellow;
   text-align: center;
   text-decoration: none; }
+  .active-p:hover {
+    color: white; }
 
-.title-list:hover {
-  color: white; }
+.title-list {
+  margin: 45px 30px 0px 30px;
+  display: block;
+  font-size: 20px;
+  color: yellow;
+  text-align: center;
+  text-decoration: none;
+  border: 10px solid transparent; }
+  .title-list:hover {
+    color: white;
+    border: 10px solid transparent;
+    -webkit-border-image: url("../img/activepage.png") 30 stretch;
+    -o-border-image: url("../img/activepage.png") 30 stretch;
+    border-image: url("../img/activepage.png") 30 stretch; }
 
 #main-body {
   font-size: 20px;
@@ -45,40 +65,58 @@ body {
 .sidebar {
   height: auto;
   background-color: #2b1250;
-  border-radius: 10px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
   float: left;
   margin: 20px 0px; }
+
+.sidebar-active {
+  text-decoration: none;
+  border: 10px solid transparent;
+  -webkit-border-image: url("../img/activepage.png") 30 stretch;
+  -o-border-image: url("../img/activepage.png") 30 stretch;
+  border-image: url("../img/activepage.png") 30 stretch;
+  color: yellow;
+  font-size: 18px;
+  border: 10px solid transparent;
+  display: block; }
+  .sidebar-active:hover {
+    color: white; }
 
 .sidebar-item {
   text-decoration: none;
   color: yellow;
-  font-size: 18px; }
-
-.sidebar-item:hover {
-  color: white; }
+  font-size: 18px;
+  border: 10px solid transparent;
+  display: block; }
+  .sidebar-item:hover {
+    color: white;
+    border: 10px solid transparent;
+    -webkit-border-image: url("../img/activepage.png") 30 stretch;
+    -o-border-image: url("../img/activepage.png") 30 stretch;
+    border-image: url("../img/activepage.png") 30 stretch; }
 
 #sidebar-itemgrp {
-  list-style-type: none; }
-
-#sidebar-itemgrp li {
-  padding: 50px 0px; }
+  list-style-type: none;
+  padding: 20px; }
 
 /*frames css starts here*/
 .frames {
   background-color: #2b1250;
-  border-radius: 10px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
   margin: 1%;
   float: left;
   text-align: center;
   padding: 20px 0px;
   box-shadow: 3px 3px 4px #000000;
   text-decoration: none; }
-
-.frames a {
-  text-decoration: none; }
-
-.frames:hover {
-  background-color: #231250; }
+  .frames:hover {
+    background-color: #231250; }
+  .frames a {
+    text-decoration: none; }
 
 .frame-name {
   color: black; }
@@ -98,9 +136,8 @@ body {
   border: 2px solid black;
   padding: 10px 0px;
   margin: 0px 10%; }
-
-.frame-select:hover {
-  background-color: #650c48; }
+  .frame-select:hover {
+    background-color: #650c48; }
 
 /*  frame-expand */
 .frame-expand {
@@ -136,7 +173,9 @@ body {
 /* About starts here*/
 .shop-img {
   background-color: #2b1250;
-  border-radius: 10px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
   float: left;
   padding: 5%;
   margin-top: 100px; }
@@ -147,15 +186,10 @@ body {
 
 #main-footer {
   background: #450c48;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#210422, #450c48, #210422);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#210422, #450c48, #210422);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#210422, #450c48, #210422);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(#210422, #450c48, #210422);
-  /* Standard syntax */
   padding: 10px 2%;
   font-size: 20px;
   color: white;

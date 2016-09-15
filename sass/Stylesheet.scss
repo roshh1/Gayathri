@@ -1,8 +1,47 @@
+$bgColor : #450c48;
+$bgColor2 : #210422;
+$fontListC : yellow;
+$fontHoverC : white;
+$txtBodyC : #b50c48;
+$barBgC : #2b1250;
+$shadowC : #000000;
 
 
+@mixin border-radius($radius: 10px)
+{	
+	-webkit-border-radius: 12px; 
+	-moz-border-radius: 12px;  
+	border-radius: 12px; 
+}
+@mixin background()
+{
+	background: $bgColor; 
+	background: -webkit-linear-gradient($bgColor2, $bgColor, $bgColor2); 
+	background: -o-linear-gradient($bgColor2, $bgColor, $bgColor2); 
+	background: -moz-linear-gradient($bgColor2, $bgColor, $bgColor2); 
+	background: linear-gradient($bgColor2, $bgColor, $bgColor2); 
+}
+
+@mixin border-image()
+{
+	border: 10px solid transparent;
+	-webkit-border-image: url("../img/activepage.png") 30 stretch;
+	-o-border-image: url("../img/activepage.png") 30 stretch;
+	border-image: url("../img/activepage.png") 30 stretch;
+}
 body {background-image: url("../img/bg_2.jpg");}
 
 * { box-sizing: border-box;}
+.close
+{
+	
+	float: right;
+	text-decoration:none;
+	color: white;
+	background-color:black;
+	padding:3px;
+	margin:2px;
+}
 
 .logo
 {
@@ -15,66 +54,101 @@ body {background-image: url("../img/bg_2.jpg");}
 	list-style-type: none;
 	overflow: hidden;
 	margin: 0;
-	background: #450c48; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(#210422, #450c48, #210422); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#210422, #450c48, #210422); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#210422, #450c48, #210422); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#210422, #450c48, #210422); /* Standard syntax */
+	@include background;
+	li {float: left;}
 }
-.title-menu li {float: left;}
-.title-list
+.active-p
 {
-	padding: 55px 30px 10px 30px;
+	@include border-image;
+    margin: 45px 30px 0px 30px;
 	display: block;
 	font-size: 20px;
-	color: yellow;
+	color: $fontListC;
 	text-align: center;
 	text-decoration: none;
+	&:hover {
+		color: $fontHoverC;
+	}
+}
+.title-list
+{
+	margin: 45px 30px 0px 30px;
+	display: block;
+	font-size: 20px;
+	color: $fontListC;
+	text-align: center;
+	text-decoration: none;
+	border: 10px solid transparent;
+
+	&:hover {
+		color: $fontHoverC;
+		
+		@include border-image;
+	}
 }
 
-.title-list:hover {	color: white;}
+
 
 #main-body
 {
 	font-size:20px;
-	color: #b50c48;
+	color: $txtBodyC;
 }
 /*    Product style starts here */
 .sidebar
 {
 	height:auto;
-	background-color: #2b1250;
-	border-radius: 10px;
+	background-color: $barBgC;
+	@include border-radius;
 	float: left;
 	margin: 20px 0px;
 	}
+.sidebar-active
+{
+	text-decoration:none;
+	@include border-image;
+	color: $fontListC;
+	font-size: 18px;
+	border: 10px solid transparent;
+	display:block;
+	&:hover {
+	color: $fontHoverC;
+	}
+}
 .sidebar-item
 {
 	text-decoration:none;
-	color: yellow;
+	color: $fontListC;
 	font-size: 18px;
+	border: 10px solid transparent;
+	display:block;
+	&:hover {
+	color: $fontHoverC;
+	@include border-image;}
 }
-.sidebar-item:hover {color: white;}
-#sidebar-itemgrp {list-style-type:none;}
-#sidebar-itemgrp li {padding: 50px 0px;	}
+#sidebar-itemgrp 
+{
+	list-style-type:none;
+	padding:20px;
+}
+ 
 
 /*frames css starts here*/
 .frames
 {
-	background-color: #2b1250;
-	border-radius: 10px;
+	background-color: $barBgC;
+	@include border-radius;
 	margin: 1%;
 	float: left;
 	text-align: center;
 	padding: 20px 0px; 
-	box-shadow: 3px 3px 4px #000000;
+	box-shadow: 3px 3px 4px $shadowC;
 	text-decoration:none;
+	&:hover{
+	background-color: #231250; }
+	a { text-decoration:none;}
 }
-.frames a { text-decoration:none;}
-.frames:hover
-{
-	background-color: #231250; 
-}
+ 
 .frame-name
 {
 	color: black;
@@ -83,7 +157,7 @@ body {background-image: url("../img/bg_2.jpg");}
 {
 	background-image: url('../img/your_img.jpg');
 	background-size: 100%;
-	box-shadow: 3px 3px 4px #000000;
+	box-shadow: 3px 3px 4px $shadowC;
 }
 
 .frame-price
@@ -93,14 +167,14 @@ body {background-image: url("../img/bg_2.jpg");}
 }
 .frame-select
 {
-	color: white;
+	color: $fontHoverC;
 	background-color: #977d22;
 	border: 2px solid black;
 	padding: 10px 0px;
 	margin: 0px 10%; 
+	&:hover
+	{background-color: #650c48;}
 }
-.frame-select:hover
-{background-color: #650c48;}
 
 /*  frame-expand */
 
@@ -108,8 +182,7 @@ body {background-image: url("../img/bg_2.jpg");}
 {
 	float: left; 
 	margin: 3%;
-	background-color: #2b1250;
-
+	background-color: $barBgC;
 }
 
 .fexp-img
@@ -117,7 +190,7 @@ body {background-image: url("../img/bg_2.jpg");}
 	margin: 20px 40px 20px 20px;
 	background-image: url('../img/your_img.jpg');
 	background-size: 100%;
-	box-shadow: 3px 3px 4px #000000;
+	box-shadow: 3px 3px 4px $shadowC;
 	float: left;
 	width: 40%;
 }
@@ -125,7 +198,7 @@ body {background-image: url("../img/bg_2.jpg");}
 /* Contact us starts here*/
 #contact_form
 {
-	background-color: #2b1250;
+	background-color: $barBgC;
 	padding: 5%;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -147,8 +220,8 @@ body {background-image: url("../img/bg_2.jpg");}
 /* About starts here*/
 .shop-img
 {
-	background-color: #2b1250;
-	border-radius: 10px;
+	background-color: $barBgC;
+	@include border-radius;
 	float: left;
 	padding: 5%;
 	margin-top: 100px;
@@ -163,15 +236,10 @@ body {background-image: url("../img/bg_2.jpg");}
 
 #main-footer
 {
-	  background: #450c48; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#210422, #450c48, #210422); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#210422, #450c48, #210422); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#210422, #450c48, #210422); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#210422, #450c48, #210422); /* Standard syntax */
-
+	@include background;
 	padding:10px 2%;
 	font-size:20px;
-	color:white;
+	color:$fontHoverC;
 	float:bottom;
 	clear:both;
 }
