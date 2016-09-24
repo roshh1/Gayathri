@@ -32,11 +32,37 @@ img_Green.addEventListener("click", imgMat);
 
 function imgMat() {
         var imgCol = document.getElementById("change-img");
-        var matColor = this.className; 
-            imgCol.className += " img-pad " + matColor ; }
+        
+
+        var matFil = ["white", "cream", "Blue", "Green"];
+        for (var i = 0; i < matFil.length; i++) {  
+        var removerFilter = imgCol.className.indexOf(matFil[i]);
+        var editFilter = imgCol.className;
+        if ( removerFilter !== -1 ) {
+          padFil = " img-pad " + matFil[i];
+        newFil = editFilter.replace(padFil , "");
+          document.getElementById("change-img").className = newFil;
+          }
+        }
+
+        var matColor = this.className;
+            imgCol.className += " img-pad " + matColor ;
+        }
 
 function imgFilter() {
         var img = document.getElementById("change-img");
+        
+        //removing existing filter
+        var imgFil = ["grayscale", "saturate", "sepia", "brightness", "contrast", "huerotate", "opacity", "blur", "invert"];
+        for (var i = 0; i < imgFil.length; i++) {  
+        var removerFilter = img.className.indexOf(imgFil[i]);
+        var editFilter = img.className;
+        if ( removerFilter !== -1 ) {
+        newFil = editFilter.replace(imgFil[i] , "");
+          document.getElementById("change-img").className = newFil;
+          }
+        }
+        // adding new filter
         var filterName = this.className; 
             img.className += ' ' + filterName ;	}
 
