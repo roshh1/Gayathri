@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/bg_2.jpg"); }
+  background-image: url("../img/bg_1.jpg"); }
 
 * {
   box-sizing: border-box; }
@@ -12,39 +12,39 @@ body {
   list-style-type: none;
   overflow: hidden;
   margin: 0;
-  background: #450c48;
-  background: -webkit-linear-gradient(#210422, #450c48, #210422);
-  background: -o-linear-gradient(#210422, #450c48, #210422);
-  background: -moz-linear-gradient(#210422, #450c48, #210422);
-  background: linear-gradient(#210422, #450c48, #210422); }
+  background: #5a323b;
+  background: -webkit-linear-gradient(#140314, #5a323b, #140314);
+  background: -o-linear-gradient(#140314, #5a323b, #140314);
+  background: -moz-linear-gradient(#140314, #5a323b, #140314);
+  background: linear-gradient(#140314, #5a323b, #140314); }
   .title-menu li {
     float: left; }
 
 .active-p {
-  border: 10px solid transparent;
+  border: 12px solid transparent;
   -webkit-border-image: url("../img/activepage_01.png") 30 round;
   -o-border-image: url("../img/activepage_01.png") 30 round;
   border-image: url("../img/activepage_01.png") 30 round;
-  margin: 45px 30px 0px 30px;
+  margin: 30px;
   display: block;
   font-size: 20px;
-  color: yellow;
+  color: #f2edb3;
   text-align: center;
   text-decoration: none; }
   .active-p:hover {
-    color: white; }
+    color: #bfae80; }
 
 .title-list {
-  margin: 45px 30px 0px 30px;
+  margin: 30px;
   display: block;
   font-size: 20px;
-  color: yellow;
+  color: #f2edb3;
   text-align: center;
   text-decoration: none;
-  border: 10px solid transparent; }
+  border: 12px solid transparent; }
   .title-list:hover {
-    color: white;
-    border: 10px solid transparent;
+    color: #bfae80;
+    border: 12px solid transparent;
     -webkit-border-image: url("../img/activepage_01.png") 30 round;
     -o-border-image: url("../img/activepage_01.png") 30 round;
     border-image: url("../img/activepage_01.png") 30 round; }
@@ -52,14 +52,14 @@ body {
 /* Footer css  */
 #main-footer {
   font-size: 15px;
-  color: white;
+  color: #bfae80;
   float: bottom;
   clear: both;
-  background: #450c48;
-  background: -webkit-linear-gradient(#210422, #450c48, #210422);
-  background: -o-linear-gradient(#210422, #450c48, #210422);
-  background: -moz-linear-gradient(#210422, #450c48, #210422);
-  background: linear-gradient(#210422, #450c48, #210422); }
+  background: #5a323b;
+  background: -webkit-linear-gradient(#140314, #5a323b, #140314);
+  background: -o-linear-gradient(#140314, #5a323b, #140314);
+  background: -moz-linear-gradient(#140314, #5a323b, #140314);
+  background: linear-gradient(#140314, #5a323b, #140314); }
 
 .footer-menu {
   list-style-type: none;
@@ -72,22 +72,22 @@ body {
   margin: 20px;
   display: block;
   font-size: 20px;
-  color: yellow;
+  color: #f2edb3;
   text-align: center;
   text-decoration: none;
-  border: 10px solid transparent; }
+  border: 12px solid transparent; }
   .footer-list:hover {
-    color: white; }
+    color: #bfae80; }
 
 /* Sidebar css*/
 #main-body {
   font-size: 20px;
-  color: #b50c48; }
+  color: #bfae80; }
 
 /*    Product style starts here */
 .sidebar {
   height: auto;
-  background-color: #2b1250;
+  background-color: #5a323b;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -96,26 +96,26 @@ body {
 
 .sidebar-active {
   text-decoration: none;
-  border: 10px solid transparent;
+  border: 12px solid transparent;
   -webkit-border-image: url("../img/activepage_01.png") 30 round;
   -o-border-image: url("../img/activepage_01.png") 30 round;
   border-image: url("../img/activepage_01.png") 30 round;
-  color: yellow;
+  color: #f2edb3;
   font-size: 18px;
-  border: 10px solid transparent;
+  border: 12px solid transparent;
   display: block; }
   .sidebar-active:hover {
-    color: white; }
+    color: #bfae80; }
 
 .sidebar-item {
   text-decoration: none;
-  color: yellow;
+  color: #f2edb3;
   font-size: 18px;
-  border: 10px solid transparent;
+  border: 12px solid transparent;
   display: block; }
   .sidebar-item:hover {
-    color: white;
-    border: 10px solid transparent;
+    color: #bfae80;
+    border: 12px solid transparent;
     -webkit-border-image: url("../img/activepage_01.png") 30 round;
     -o-border-image: url("../img/activepage_01.png") 30 round;
     border-image: url("../img/activepage_01.png") 30 round; }
@@ -126,20 +126,24 @@ body {
 
 /*frames css starts here*/
 .frames {
-  background-color: #2b1250;
+  background-color: #bfae80;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-  margin: 1%;
+  width: 20%;
+  margin: 2%;
   float: left;
   text-align: center;
   padding: 20px 0px;
   box-shadow: 3px 3px 4px #000000;
   text-decoration: none; }
   .frames:hover {
-    background-color: #231250; }
+    background-color: #f2edb3; }
   .frames a {
     text-decoration: none; }
+
+.frames-float {
+  float: left; }
 
 .close {
   float: right;
@@ -150,7 +154,9 @@ body {
   margin: 2px; }
 
 .frame-name {
-  color: black; }
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .frame-img {
   box-shadow: 3px 3px 4px #000000; }
@@ -165,22 +171,28 @@ body {
 
 .frame-price {
   color: grey;
-  font-family: cursive; }
+  font-family: cursive;
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .frame-select {
-  color: white;
-  background-color: #977d22;
+  color: #bfae80;
+  background-color: #5a323b;
   border: 2px solid black;
   padding: 10px 0px;
   margin: 0px 10%; }
   .frame-select:hover {
-    background-color: #650c48; }
+    background-color: #140314; }
 
 /*  frame-expand */
 .frame-expand {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
   float: left;
-  margin: 3%;
-  background-color: #2b1250; }
+  margin: 2%;
+  width: 95%;
+  background-color: #bfae80; }
 
 .fexp-img {
   margin: 20px 40px 20px 20px;
@@ -192,7 +204,7 @@ body {
 
 /* Contact us starts here*/
 #contact_form {
-  background-color: #2b1250;
+  background-color: #5a323b;
   padding: 5%;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -209,7 +221,7 @@ body {
 
 /* About starts here*/
 .shop-img {
-  background-color: #2b1250;
+  background-color: #5a323b;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -219,7 +231,10 @@ body {
 
 .about-txt {
   float: left;
-  padding: 5%; }
+  padding: 3%; }
+
+.para-font {
+  font-family: cursive; }
 
 /* Other services scripts */
 .hide {
@@ -227,13 +242,13 @@ body {
 
 .services {
   float: left;
-  padding: 100px; }
+  padding: 50px; }
 
 /* Other services scripts */
 .field {
   float: left;
-  text-align: center;
-  margin: 30px 0px; }
+  padding: 30px;
+  text-align: center; }
 
 .grayscale {
   -webkit-filter: grayscale(100%);

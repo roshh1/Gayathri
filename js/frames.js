@@ -20,14 +20,20 @@ fbutton_3.addEventListener("click", frameExp);
 var close_3 = document.getElementById("close-3");
 close_3.addEventListener("click", closeExp);
 
+var fbutton_4 = document.getElementById("fbutton-4");
+var fexp_4 = document.getElementById("fexp-4");
+var fsmall_4 = document.getElementById("fsmall-4");
+fbutton_4.addEventListener("click", frameExp);
+var close_4 = document.getElementById("close-4");
+close_4.addEventListener("click", closeExp);
 
 
 function frameExp() {
-	var allExp = [fexp_1, fexp_2, fexp_3 ];
-	var allSmall = [fsmall_1, fsmall_2, fsmall_3];
+	var allExp = [fexp_1, fexp_2, fexp_3, fexp_4 ];
+	var allSmall = [fsmall_1, fsmall_2, fsmall_3, fsmall_4];
 	for (var i = 0; i < allExp.length; i++) {
 		allExp[i].className = "hide";
-		allSmall[i].className = "frames col-3";
+		allSmall[i].className = "frames";
 
 	}
 
@@ -36,8 +42,8 @@ function frameExp() {
 	var frameSmallId = this.attributes["data-hide"].value;
 	var fsmallId = document.getElementById(frameSmallId);
 	
-	fexpId.className = "frame-expand col-9";
-	fsmallId.className = "hide frames col-3";
+	fexpId.className = "frame-expand";
+	fsmallId.className = "hide frames";
 	}
 
 function closeExp (){
@@ -46,7 +52,7 @@ function closeExp (){
 	var frameSmallclose = this.attributes["data-hide"].value;
 	var fsmallclose = document.getElementById(frameSmallclose);
 	
-	fexpClose.className = "hide frame-expand col-9";
-	fsmallclose.className = "frames col-3";
+	fexpClose.className = "hide frame-expand";
+	fsmallclose.className = "frames";
 }
 

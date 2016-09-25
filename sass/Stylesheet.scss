@@ -1,9 +1,9 @@
-$bgColor : #450c48;
-$bgColor2 : #210422;
-$fontListC : yellow;
-$fontHoverC : white;
-$txtBodyC : #b50c48;
-$barBgC : #2b1250;
+$bgColor : #5a323b;
+$bgColor2 : #140314;
+$fontListC : #f2edb3;
+$fontHoverC : #bfae80;
+$txtBodyC : #bfae80;
+$barBgC : #5a323b;
 $shadowC : #000000;
 
 
@@ -26,12 +26,12 @@ $shadowC : #000000;
 
 @mixin border-image()
 {
-	border: 10px solid transparent;
+	border: 12px solid transparent;
 	-webkit-border-image: url("../img/activepage_01.png") 30 round;
 	-o-border-image: url("../img/activepage_01.png") 30 round;
 	border-image: url("../img/activepage_01.png") 30 round;
 }
-body {background-image: url("../img/bg_2.jpg");}
+body {background-image: url("../img/bg_1.jpg");}
 
 * { box-sizing: border-box;}
 
@@ -53,7 +53,7 @@ body {background-image: url("../img/bg_2.jpg");}
 .active-p
 {
 	@include border-image;
-    margin: 45px 30px 0px 30px;
+    margin: 30px;
 	display: block;
 	font-size: 20px;
 	color: $fontListC;
@@ -65,13 +65,13 @@ body {background-image: url("../img/bg_2.jpg");}
 }
 .title-list
 {
-	margin: 45px 30px 0px 30px;
+	margin: 30px;
 	display: block;
 	font-size: 20px;
 	color: $fontListC;
 	text-align: center;
 	text-decoration: none;
-	border: 10px solid transparent;
+	border: 12px solid transparent;
 
 	&:hover {
 		color: $fontHoverC;
@@ -106,7 +106,7 @@ body {background-image: url("../img/bg_2.jpg");}
 	color: $fontListC;
 	text-align: center;
 	text-decoration: none;
-	border: 10px solid transparent;
+	border: 12px solid transparent;
 
 	&:hover {
 		color: $fontHoverC;}
@@ -133,7 +133,7 @@ body {background-image: url("../img/bg_2.jpg");}
 	@include border-image;
 	color: $fontListC;
 	font-size: 18px;
-	border: 10px solid transparent;
+	border: 12px solid transparent;
 	display:block;
 	&:hover {
 	color: $fontHoverC;
@@ -144,7 +144,7 @@ body {background-image: url("../img/bg_2.jpg");}
 	text-decoration:none;
 	color: $fontListC;
 	font-size: 18px;
-	border: 10px solid transparent;
+	border: 12px solid transparent;
 	display:block;
 	&:hover {
 	color: $fontHoverC;
@@ -160,18 +160,21 @@ body {background-image: url("../img/bg_2.jpg");}
 /*frames css starts here*/
 .frames
 {
-	background-color: $barBgC;
+	background-color: $txtBodyC;
 	@include border-radius;
-	margin: 1%;
+	width:20%;
+	margin: 2%;
 	float: left;
 	text-align: center;
 	padding: 20px 0px; 
 	box-shadow: 3px 3px 4px $shadowC;
 	text-decoration:none;
 	&:hover{
-	background-color: #231250; }
+	background-color: $fontListC; }
 	a { text-decoration:none;}
 }
+.frames-float
+{float:left}
 .close
 {
 	
@@ -186,6 +189,8 @@ body {background-image: url("../img/bg_2.jpg");}
 .frame-name
 {
 	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .frame-img
 {
@@ -203,25 +208,29 @@ left:0;
 {
 	color: grey;
 	font-family: cursive;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .frame-select
 {
 	color: $fontHoverC;
-	background-color: #977d22;
+	background-color: $barBgC;
 	border: 2px solid black;
 	padding: 10px 0px;
 	margin: 0px 10%; 
 	&:hover
-	{background-color: #650c48;}
+	{background-color: $bgColor2;}
 }
 
 /*  frame-expand */
 
 .frame-expand
 {
+	@include border-radius;
 	float: left; 
-	margin: 3%;
-	background-color: $barBgC;
+	margin: 2%;
+	width:95%;
+	background-color: $txtBodyC;
 }
 
 .fexp-img
@@ -269,8 +278,10 @@ left:0;
 .about-txt
 {
 	float: left;
-	padding: 5%;
+	padding: 3%;
 }
+.para-font 
+	{font-family: cursive;}
 
 /* Other services scripts */
 
@@ -278,15 +289,15 @@ left:0;
 .services
 {
 	float: left;
-	padding: 100px;
+	padding: 50px;
 }
 
 /* Other services scripts */
 .field
 {
 	float:left;
+	padding:30px;
 	text-align: center;
-	margin: 30px 0px;
 }
 .grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
 .saturate {-webkit-filter: saturate(7); filter: saturate(7);}
