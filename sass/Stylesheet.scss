@@ -7,11 +7,11 @@ $barBgC : #5a323b;
 $shadowC : #000000;
 
 
-@mixin border-radius($radius: 10px)
+@mixin border-radius($radius: 12px)
 {	
-	-webkit-border-radius: 12px; 
-	-moz-border-radius: 12px;  
-	border-radius: 12px; 
+	-webkit-border-radius: $radius; 
+	-moz-border-radius: $radius;  
+	border-radius: $radius; 
 }
 
 @mixin background()
@@ -31,6 +31,23 @@ $shadowC : #000000;
 	-o-border-image: url("../img/activepage_01.png") 30 round;
 	border-image: url("../img/activepage_01.png") 30 round;
 }
+.glass {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  @include border-radius($radius: 50%)
+
+  
+  /* Multiple box shadows to achieve the glass effect */
+  box-shadow:
+    0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25), 
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  
+  /* hide the glass by default */
+  display: none;
+}
+
 body {background-image: url("../img/bg_1.jpg");}
 
 * { box-sizing: border-box;}
