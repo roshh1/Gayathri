@@ -6,6 +6,34 @@ $txtBodyC : #bfae80;
 $barBgC : #5a323b;
 $shadowC : #000000;
 
+.img-margin{
+	width:50%;
+	float:left;
+	padding:10px;
+}
+
+
+.crop-bottom {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  heigth: auto;
+  position: relative;
+  background: white;
+  overflow: hidden;
+
+	img {
+  		display: block;
+  		margin: 0 auto;
+ 		width: 100%;
+ 		height: auto;
+	}
+}
+
+.crop-bottom img {
+	width:250%;
+	margin: 0 auto -200%;
+}
 
 @mixin border-radius($radius: 12px)
 {	
@@ -31,18 +59,30 @@ $shadowC : #000000;
 	-o-border-image: url("../img/activepage_01.png") 30 round;
 	border-image: url("../img/activepage_01.png") 30 round;
 }
+.heading-font{
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size: 1.6em;
+	text-shadow: 2px 2px 4px $fontHoverC;
+}
+
+.para-font 
+	{font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.1em;
+}
+.sec-font
+{
+	font-size:1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 2px 2px 4px $fontHoverC;
+}
+
 .glass {
   width: 300px;
   height: 300px;
   position: absolute;
-  @include border-radius($radius: 50%)
-
   
   /* Multiple box shadows to achieve the glass effect */
-  box-shadow:
-    0 0 0 7px rgba(255, 255, 255, 0.85),
-    0 0 7px 7px rgba(0, 0, 0, 0.25), 
-    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
   
   /* hide the glass by default */
   display: none;
@@ -70,9 +110,9 @@ body {background-image: url("../img/bg_1.jpg");}
 .active-p
 {
 	@include border-image;
-    margin: 30px;
+    margin: 30px 20px;
 	display: block;
-	font-size: 20px;
+	font-size: 1.2em;
 	color: $fontListC;
 	text-align: center;
 	text-decoration: none;
@@ -80,11 +120,19 @@ body {background-image: url("../img/bg_1.jpg");}
 		color: $fontHoverC;
 	}
 }
+.selImg
+{
+	border: 1px solid #bfae80;
+	height:20px;
+	width:20px;
+	display: block;
+	margin-top:12px;
+}
 .title-list
 {
-	margin: 30px;
+	margin: 30px 20px;
 	display: block;
-	font-size: 20px;
+	font-size: 1.2em;
 	color: $fontListC;
 	text-align: center;
 	text-decoration: none;
@@ -100,39 +148,73 @@ body {background-image: url("../img/bg_1.jpg");}
 /* Footer css  */
 #main-footer
 {
-	font-size:15px;
-	color:$fontHoverC;
-	float:bottom;
 	clear:both;
+	color:$txtBodyC;
+	font-size:1em;
 	@include background;
-
+	display:inline-block;
+	height: 1%;
+	margin-top:20px;
+	
 }
-.footer-menu
+hr
 {
-	list-style-type: none;
-	overflow: hidden;
-	margin:0px;
-	li {float:left;
+	margin:1%;
+	border-top: 1px double $txtBodyC;
 }
+.footer-contact
+{
+	float:left;
+	padding:2%
 }
+
 .footer-list
 {
-	margin: 20px;
-	display: block;
-	font-size: 20px;
-	color: $fontListC;
-	text-align: center;
-	text-decoration: none;
-	border: 12px solid transparent;
-
-	&:hover {
-		color: $fontHoverC;}
+	float:left;
+	padding: 3%;
+	a {display:block;
+		padding:1%;
+		color:$txtBodyC;}
+}
+.hg{
+	text-align:left;
+	padding:3%;
+	border-bottom: 1px solid $txtBodyC;
+	p{
+		padding:0px 8%;
+	}
+}
+.footer-social
+{
+	float:left;
+	padding:2%;
+	
 }
 /* Sidebar css*/
 
+.h-center{
+	display:block;
+	margin: 0px 15%;
+	img{
+		margin-top:25px;
+		border: 30px ridge white;
+	}
+    
+}
+.h-button
+{
+	float:left;
+	padding: 10px 5%;
+	text-align: center;
+	a{
+	color: $txtBodyC;
+	font-size:2em;
+	text-decoration:none;
+}
+}
+
 #main-body
 {
-	font-size:20px;
 	color: $txtBodyC;
 }
 /*    Product style starts here */
@@ -191,7 +273,7 @@ body {background-image: url("../img/bg_1.jpg");}
 	a { text-decoration:none;}
 }
 .frames-float
-{float:left}
+{float:left;}
 .close
 {
 	
@@ -214,12 +296,30 @@ body {background-image: url("../img/bg_1.jpg");}
 
 	box-shadow: 3px 3px 4px $shadowC;
 }
-.frame-imgGrp { position:relative; margin:30px; } 
+.frame-imgGrp {
+ position:relative; 
+margin-top:10px;
+ 	left:0;
+	top:0;
+} 
+
 .fimg-position {
 	position: absolute;
-left:0;
+	left: 0px;
+	top: 0px;
 
-    }
+}
+#custom-center
+{
+	display:block;
+	margin:3%;
+}
+.img-thumb
+{
+	display:block;
+	margin-top:50px;
+	margin-left: 50px;
+}
 
 .frame-price
 {
@@ -253,7 +353,6 @@ left:0;
 .fexp-img
 {
 	margin: 20px 40px 20px 20px;
-	background-image: url('../img/your_img.jpg');
 	background-size: 100%;
 	box-shadow: 3px 3px 4px $shadowC;
 	float: left;
@@ -297,8 +396,6 @@ left:0;
 	float: left;
 	padding: 3%;
 }
-.para-font 
-	{font-family: cursive;}
 
 /* Other services scripts */
 
@@ -307,6 +404,13 @@ left:0;
 {
 	float: left;
 	padding: 50px;
+}
+.txt-hight
+{
+	height:600px;
+}
+.load-button{
+	margin-bottom:30px;
 }
 
 /* Other services scripts */
@@ -335,9 +439,23 @@ left:0;
 {background-color:#4169E1;}
 .Green
 {background-color: #006400;}
+
 .field-height
 {
-	height:500px;
+	max-height:550px;
+	max-width:200%;
+	display:block;
+	margin:auto;
+	width: auto;
+	height:auto;
+}
+.frame-rotate
+{
+	left:75px;
+	top:-75px;
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
 }
 .custom-frame
 {
@@ -345,10 +463,19 @@ left:0;
 }
 .custom-img
 {
-	position:static;
+	position:absolute; 
+ 	left:0;
+	top:0;
 }
 .img-pad
-{padding:50px;}
+{
+	padding:20px;
+	max-width: 180%;
+	margin:auto;
+	max-height:550px;
+	width:auto;
+	height:auto;
+}
 
 
 /* css Responsive design */

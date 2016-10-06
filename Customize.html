@@ -9,7 +9,7 @@
 	
 </head>
 
-<body>
+<body class="col-12">
 	
 	<header id="heading">
 
@@ -28,7 +28,7 @@
 	<main id="main-body">
 
 	<div class="sidebar col-2">
-		<h3> Filters</h3>
+		<h3 class="sec-font"> Filters</h3>
 		<ul sidebar-itemgrp >
 		
 		<a id="img-normal" class="" href="#"><img src="img/nature-bg.jpg" width="35%"></a>
@@ -44,7 +44,8 @@
 		</ul>
 		<hr>
 		<ul>
-		<h3> Add Mat</h3>
+		<h3 class="sec-font"> Add Mat</h3>
+		<li><a id="img-none" class="" href="#">White</a></li>
 		<li><a id="img-white" class="white" href="#">White</a></li>
 		<li><a id="img-cream" class="cream" href="#">Half White</a></li>
 		<li><a id="img-Blue" class="Blue" href="#">Blue</a></li>
@@ -55,28 +56,140 @@
 
 	<div class="field col-7">
 	
-		<div class="field-height">
-		<input type="file" onchange="previewFile()"><br>
-			<div class="frame-imgGrp">
-				<img id="change-img" class="field-height fimg-position" src="img/nature-bg.jpg">
-				<img class="field-height fimg-position" src="img/frame_sample.png"/>
+		<div class="">
+		<div class="load-button"><input type="file" onchange="previewFile()"><br></div>
+				<div id="custom-center" class="col-6">
+				<div class="frame-imgGrp field-height">
+					<img id="change-img" class="img-pad custom-img" src="img/nature-bg.jpg"/>
+					<img id ="change-frame" class="fimg-position frame-rotate" src="img/custom_frame/gayathri_custom01.png"/>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="field col-3">
-		<iframe src="frames.html" height="550px"></iframe>
+	<div class="sidebar field col-3">
+		<div class ="frame-set">
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-01" class="size-01" src="img/custom_frame/gayathri_custom01.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-02" class="size-01" src="img/custom_frame/gayathri_custom02.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-03" class="size-02" src="img/custom_frame/gayathri_custom03.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-04" class="size-03" src="img/custom_frame/gayathri_custom04.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class ="frame-set hide">
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-05" class="size-04" src="img/custom_frame/gayathri_custom05.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-06" class="size-04" src="img/custom_frame/gayathri_custom06.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-07" class="size-04" src="img/custom_frame/gayathri_custom07.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-08" class="size-04" src="img/custom_frame/gayathri_custom08.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class ="frame-set hide">
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-09" class="size-05" src="img/custom_frame/gayathri_custom09.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-10" class="size-05" src="img/custom_frame/gayathri_custom10.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-11" class="size-06" src="img/custom_frame/gayathri_custom11.png"></a>
+				</div>
+			</div>
+
+			<div class="img-margin">
+				<div class="crop-bottom">
+			 	 <a href="#"><img id="custom-12" class="size-06" src="img/custom_frame/gayathri_custom12.png"></a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="h-button"><a href="#" onclick="plusDivs(-1)">&#10094; prev</div></a>
+		<div class="h-button"><a href="#" onclick="plusDivs(1)">next &#10095; </div></a>
 	</div>
 	</main>
-	<footer id="main-footer">
-		<ul class="footer-menu col-12">
-			<li><a class="footer-list" href="Home.html"> Home</a></li>
-			<li><a class="footer-list" href="About.html"> About&nbsp;US</a></li>
-			<li><a class="footer-list" href="Products.html"> Frames</a></li>
-			<li><a class="footer-list" href="Customize.html"> Customize</a></li>
-			<li><a class="footer-list" href="Services.html"> Other&nbsp;Services</a></li>
-			<li><a class="footer-list" href="Contact.html"> Contact</a></li>
-		</ul>
-	</footer>
+
+	
+	<footer id="main-footer" class="col-12">
+		<div class="footer-list col-4">
+			  <a href="Home.html"> Home</a>
+			  <a href="About.html"> About&nbsp;US</a>
+			  <a href="Products.html"> Frames</a>
+			  <a href="Customize.html"> Customize</a>
+			  <a href="Services.html"> Other&nbsp;Services</a>
+			  <a href="Contact.html"> Contact</a>
+		</div>
+		<div class="footer-contact col-4">
+			<h4>Contact Us</h4>
+			<address>
+				240 SC Road,<br>
+				Bengaluru, Karnataka 560009,<br>
+				India
+			</address>
+			<h3>Phone Number:</h3>
+			<p>Office: <u>+91 80 2225 8677</u><br>Mobile: <u>+91 98441 62429</u>
+			</p>
+		</div>
+
+		<div class="footer-social col-4">
+			<div class="hg">
+				<h4>HAPPINESS GUARANTEE</h4>
+				<p>"Your happiness is our top priority. If you're not 100% happy with your order for any reason, let us know and we'll make it right."</p>
+			</div>
+			<h4>Follow Us</h4>
+			<a href=""><img src="http://i0.wp.com/vlexo.net/wp-content/uploads/2014/02/facebook-thumbnail.png?fit=960%2C960" width="30px" /></a>
+			<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="30px"/></a>
+		</div>
+
+		<div class="col-12">
+		<hr>
+		<p>&copy; <i> by <a href="">Silphashree</a> <i></p>
+		
+		</div>
+		</footer>
 		<script type="text/javascript" src="js/custom.js"></script>
 		
 </body>
