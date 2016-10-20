@@ -46,23 +46,23 @@
 					<div id="fsmall-1" class="frames">
 						<a data-exp="fexp-1" data-hide="fsmall-1" id="fbutton-1" href="#frame1">
 						
-						<img class="frame-img" src="img/frames/frame001.jpg" alt="Lighting box" width="75%" height="50%"/>
+						<img class="frame-img" src="img/frames/frame001.jpg" alt="Balsam Fir" width="75%" height="50%"/>
 
-						<h4 class="frame-name">First Frame</h4>
+						<h4 class="frame-name">Balsam Fir</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
 					<div id="fexp-1" class="hide frame-expand">
 					<div> <a name="frame1" data-exp="fexp-1" data-hide="fsmall-1" id="close-1" class="close" href="#">X</a></div>
-						<img class="fexp-img magniflier" src="img/frames/frame001.jpg" alt="Lighting box" width="50%" height="50%"/>
-						<h4 class="frame-name">First Frame</h4>
-						<p class="para-font frame-name">This is the first frame discription</p>
-						<p class="para-font frame-name">Product Number : 01</p>
+						<img class="fexp-img magniflier" src="img/frames/frame001.jpg" alt="Balsam Fir" width="50%" height="50%"/>
+						<h4 class="frame-name">Balsam Fir</h4>
+						<p class="para-font frame-name">Classy brown with a touch of gold</p>
+						<p class="para-font frame-name">Product Number : </p>
 						<p class="para-font frame-price">Price</p>
-						<select>
-						  <option value="select-size">Select Size</option>
+						<select data-p="Balsam-price" id="Balsam-Fir" onchange="finalPrice('Balsam-Fir')">
+						  <option value="Select Size">Select Size</option>
 						  <option value="size-1">8 X 12</option>
 						  <option value="size-2">10 X 12</option>
 						  <option value="size-3">bigger</option>
@@ -74,32 +74,28 @@
 						  <option value="blue">blue</option>
 						  <option value="green">green</option>
 						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
+						<p class="para-font frame-name">Final price: <span id="Balsam-price">Select Size</span></p>
 					</div>
 				</div>
 
 				<div id="frame-2">
 					<div id="fsmall-2" class="frames">
 						<a data-exp="fexp-2" data-hide="fsmall-2" id="fbutton-2" href="#frame2">
-						<img class="frame-img" src="img/frames/frame002.jpg" alt="Lighting box" width="75%" height="50%"/>
-						<h4 class="frame-name">Second Frame</h4>
+						<img class="frame-img" src="img/frames/frame002.jpg" alt="yellow birch" width="75%" height="50%"/>
+						<h4 class="frame-name">Yellow Birch</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
 					<div id="fexp-2" class="hide frame-expand">
 					<div> <a name="frame2" data-exp="fexp-2" data-hide="fsmall-2" id="close-2" class="close" href="#">X</a></div>
-						<img class="fexp-img magniflier" src="img/frames/frame002.jpg" alt="Lighting box" width="50%" height="50%"/>
-						<h4 class="frame-name">Second Frame</h4>
-						<p class="para-font frame-name">This is the Second frame discription</p>
+						<img class="fexp-img magniflier" src="img/frames/frame002.jpg" alt="yellow birch" width="50%" height="50%"/>
+						<h4 class="frame-name">Yellow Birch</h4>
+						<p class="para-font frame-name">Elegant gold with a linear finish</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
+						<select data-p="yellowbirch-price" id="yellow-birch" onchange="finalPrice('yellow-birch')">
 						  <option value="select-size">Select Size</option>
 						  <option value="size-1">8 X 12</option>
 						  <option value="size-2">10 X 12</option>
@@ -112,11 +108,7 @@
 						  <option value="blue">blue</option>
 						  <option value="green">green</option>
 						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
+						<p class="para-font frame-name">Final price: <span id="yellowbirch-price">Select Size</span></p>
 					</div>
 				</div>
 
@@ -124,20 +116,20 @@
 					<div id="fsmall-3" class="frames">
 						<a data-exp="fexp-3" data-hide="fsmall-3" id="fbutton-3" href="#frame3">
 						<img class="frame-img" src="img/frames/frame003.jpg" alt="Lighting box" width="75%" height="50%"/>
-						<h4 class="frame-name">Third Frame</h4>
+						<h4 class="frame-name">Sugar Maple</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
 					<div id="fexp-3" class="hide frame-expand">
 					<div> <a name="frame3" data-exp="fexp-3" data-hide="fsmall-3" id="close-3" class="close" href="#">X</a></div>
 						<img class="fexp-img magniflier" src="img/frames/frame003.jpg" alt="Lighting box" width="50%" height="50%"/>
-						<h4 class="frame-name">Third Frame</h4>
-						<p class="para-font frame-name">This is the Third frame discription</p>
+						<h4 class="frame-name">Sugar Maple</h4>
+						<p class="para-font frame-name">Classic brown with a beady edge</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
+						<select data-p="sugarmaple-price" id="sugar-maple" onchange="finalPrice('sugar-maple')">
 						  <option value="select-size">Select Size</option>
 						  <option value="size-1">8 X 12</option>
 						  <option value="size-2">10 X 12</option>
@@ -150,11 +142,7 @@
 						  <option value="blue">blue</option>
 						  <option value="green">green</option>
 						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
+						<p class="para-font frame-name">Final price: <span id="sugarmaple-price">Select Size</span></p>
 					</div>
 				</div>
 
@@ -162,20 +150,20 @@
 					<div id="fsmall-4" class="frames">
 						<a data-exp="fexp-4" data-hide="fsmall-4" id="fbutton-4" href="#frame4">
 						<img class="frame-img" src="img/frames/frame004.jpg" alt="Lighting box" width="75%" height="50%"/>
-						<h4 class="frame-name">Third Frame</h4>
+						<h4 class="frame-name">Butternut Bark</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
 					<div id="fexp-4" class="hide frame-expand">
 							<div> <a name="frame4" data-exp="fexp-4" data-hide="fsmall-4" id="close-4" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame004.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Butternut Bark</h4>
+							<p class="para-font frame-name">The raw look with a finesse</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="butternutbark-price" id="butternut-bark" onchange="finalPrice('butternut-bark')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -188,11 +176,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="butternutbark-price">Select Size</span></p>
 						</div>
 					</div>
 				
@@ -201,20 +185,20 @@
 						<div id="fsmall-5" class="frames">
 							<a data-exp="fexp-5" data-hide="fsmall-5" id="fbutton-5" href="#frame5">
 							<img class="frame-img" src="img/frames/frame005.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Auric Cherrydrip </h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-5" class="hide frame-expand">
 						<div> <a name="frame5" data-exp="fexp-5" data-hide="fsmall-5" id="close-5" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame005.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Auric Cherrydrip </h4>
+							<p class="para-font frame-name">Shades of cherry with a golden lining</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="auriccherrydrip-price" id="auric-cherrydrip" onchange="finalPrice('auric-cherrydrip')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -227,11 +211,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="auriccherrydrip-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -239,20 +219,20 @@
 						<div id="fsmall-6" class="frames">
 							<a data-exp="fexp-6" data-hide="fsmall-6" id="fbutton-6" href="#frame6">
 							<img class="frame-img" src="img/frames/frame006.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Eastern Redcedar</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-6" class="hide frame-expand">
 						<div> <a name="frame6" data-exp="fexp-6" data-hide="fsmall-6" id="close-6" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame006.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Eastern Redcedar</h4>
+							<p class="para-font frame-name">Intricately carved border for that majestic look</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="easternredcedar-price" id="eastern-redcedar" onchange="finalPrice('eastern-redcedar')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -265,11 +245,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="easternredcedar-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -277,20 +253,20 @@
 						<div id="fsmall-7" class="frames">
 							<a data-exp="fexp-7" data-hide="fsmall-7" id="fbutton-7" href="#frame7">
 							<img class="frame-img" src="img/frames/frame007.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Eastern Hemlock</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-7" class="hide frame-expand">
 						<div> <a name="frame7" data-exp="fexp-7" data-hide="fsmall-7" id="close-7" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame007.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Eastern Hemlock</h4>
+							<p class="para-font frame-name">Classic brown with a royal touch</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="easternhemlock-price" id="eastern-hemlock" onchange="finalPrice('eastern-hemlock')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -303,11 +279,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="easternhemlock-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -315,20 +287,20 @@
 						<div id="fsmall-8" class="frames">
 							<a data-exp="fexp-8" data-hide="fsmall-8" id="fbutton-8" href="#frame8">
 							<img class="frame-img" src="img/frames/frame008.jpg" alt="Lighting box" width="75%" height="80%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Honey Locust</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-8" class="hide frame-expand">
 							<div> <a name="frame8" data-exp="fexp-8" data-hide="fsmall-8" id="close-8" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame008.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Honey Locust</h4>
+							<p class="para-font frame-name">Exuberant yellow for a dynamic feel</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="honeylocust-price" id="honey-locust" onchange="finalPrice('honey-locust')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -341,11 +313,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="honeylocust-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -353,20 +321,20 @@
 						<div id="fsmall-9" class="frames">
 							<a data-exp="fexp-9" data-hide="fsmall-9" id="fbutton-9" href="#frame9">
 							<img class="frame-img" src="img/frames/frame009.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Obsidian Carmine</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-9" class="hide frame-expand">
 							<div> <a name="frame9" data-exp="fexp-9" data-hide="fsmall-9" id="close-9" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame009.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Obsidian Carmine</h4>
+							<p class="para-font frame-name">Shades of cherry with a black lining </p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="obsidiancarmine-price" id="obsidian-carmine" onchange="finalPrice('obsidian-carmine')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -379,11 +347,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="obsidiancarmine-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -391,20 +355,20 @@
 						<div id="fsmall-10" class="frames">
 							<a data-exp="fexp-10" data-hide="fsmall-10" id="fbutton-10" href="#frame10">
 							<img class="frame-img" src="img/frames/frame010.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Bloody Hawthorn</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-10" class="hide frame-expand">
 							<div> <a name="frame10" data-exp="fexp-10" data-hide="fsmall-10" id="close-10" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame010.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Bloody Hawthorn</h4>
+							<p class="para-font frame-name">Double framed classic brown</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="bloodyhawthorn-price" id="bloody-hawthorn" onchange="finalPrice('bloody-hawthorn')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -417,11 +381,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="bloodyhawthorn-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -429,20 +389,20 @@
 						<div id="fsmall-11" class="frames">
 							<a data-exp="fexp-11" data-hide="fsmall-11" id="fbutton-11" href="#frame11">
 							<img class="frame-img" src="img/frames/frame011.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Goldern Mahogany</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-11" class="hide frame-expand">
 							<div> <a name="frame11" data-exp="fexp-11" data-hide="fsmall-11" id="close-11" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame011.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Goldern Mahogany</h4>
+							<p class="para-font frame-name">Ethnic gold finish to a classic brown base</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="goldernmahogany-price" id="goldern-mahogany" onchange="finalPrice('goldern-mahogany')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -455,11 +415,7 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="goldernmahogany-price">Select Size</span></p>
 						</div>
 					</div>
 
@@ -467,20 +423,20 @@
 						<div id="fsmall-12" class="frames">
 							<a data-exp="fexp-12" data-hide="fsmall-12" id="fbutton-12" href="#frame12">
 							<img class="frame-img" src="img/frames/frame012.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
+							<h4 class="frame-name">Sequoia Blaze</h4>
 							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
+							<h4 class="frame-select">Details</h4>
 							</a>
 						</div>
 
 						<div id="fexp-12" class="hide frame-expand">
 							<div> <a name="frame12" data-exp="fexp-12" data-hide="fsmall-12" id="close-12" class="close" href="#">X</a></div>
 							<img class="fexp-img magniflier" src="img/frames/frame012.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
 							<p class="para-font frame-name">Product Number : 01</p>
 							<p class="para-font frame-price">Price</p>
-							<select>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
 							  <option value="select-size">Select Size</option>
 							  <option value="size-1">8 X 12</option>
 							  <option value="size-2">10 X 12</option>
@@ -493,52 +449,9 @@
 							  <option value="blue">blue</option>
 							  <option value="green">green</option>
 							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
 						</div>
 					</div>
-
-					<div id="frame-13">
-						<div id="fsmall-13" class="frames">
-							<a data-exp="fexp-13" data-hide="fsmall-13" id="fbutton-13" href="#frame13">
-							<img class="frame-img" src="img/frames/frame013.jpg" alt="Lighting box" width="75%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-price">Price</p>
-							<h4 class="frame-select">Expand Frame</h4>
-							</a>
-						</div>
-
-						<div id="fexp-13" class="hide frame-expand">
-							<div> <a name="frame13" data-exp="fexp-13" data-hide="fsmall-13" id="close-13" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame013.jpg" alt="Lighting box" width="50%" height="50%"/>
-							<h4 class="frame-name">Third Frame</h4>
-							<p class="para-font frame-name">This is the Third frame discription</p>
-							<p class="para-font frame-name">Product Number : 01</p>
-							<p class="para-font frame-price">Price</p>
-							<select>
-							  <option value="select-size">Select Size</option>
-							  <option value="size-1">8 X 12</option>
-							  <option value="size-2">10 X 12</option>
-							  <option value="size-3">bigger</option>
-							</select>
-							<br>
-							<select>
-							  <option value="mat">Select Mat Color</option>
-							  <option value="red">red</option>
-							  <option value="blue">blue</option>
-							  <option value="green">green</option>
-							</select>
-							<p class="para-font frame-name">Final price</p>
-							<form>
-				 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-							 <input type="text" id="count" name="count" value="1">
-							</form>
-						</div>
-					</div>
-
 				</div>
 
 			</div>
@@ -553,7 +466,7 @@
 						<img class="frame-img" src="img/collage/collage01.jpg" alt="Collage_01" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
@@ -565,24 +478,6 @@
 						<p class="para-font frame-name">Discription</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
-						  <option value="select-size">Select Size</option>
-						  <option value="size-1">8 X 12</option>
-						  <option value="size-2">10 X 12</option>
-						  <option value="size-3">bigger</option>
-						</select>
-						<br>
-						<select>
-						  <option value="mat">Select Mat Color</option>
-						  <option value="red">red</option>
-						  <option value="blue">blue</option>
-						  <option value="green">green</option>
-						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
 					</div>
 				</div>
 
@@ -592,7 +487,7 @@
 						<img class="frame-img" src="img/collage/collage02.jpg" alt="Collage_02" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
@@ -604,24 +499,6 @@
 						<p class="para-font frame-name">Discription</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
-						  <option value="select-size">Select Size</option>
-						  <option value="size-1">8 X 12</option>
-						  <option value="size-2">10 X 12</option>
-						  <option value="size-3">bigger</option>
-						</select>
-						<br>
-						<select>
-						  <option value="mat">Select Mat Color</option>
-						  <option value="red">red</option>
-						  <option value="blue">blue</option>
-						  <option value="green">green</option>
-						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
 					</div>
 				</div>
 
@@ -631,7 +508,7 @@
 						<img class="frame-img" src="img/collage/collage03.jpg" alt="Collage_03" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
@@ -643,24 +520,6 @@
 						<p class="para-font frame-name">Discription</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
-						  <option value="select-size">Select Size</option>
-						  <option value="size-1">8 X 12</option>
-						  <option value="size-2">10 X 12</option>
-						  <option value="size-3">bigger</option>
-						</select>
-						<br>
-						<select>
-						  <option value="mat">Select Mat Color</option>
-						  <option value="red">red</option>
-						  <option value="blue">blue</option>
-						  <option value="green">green</option>
-						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
 					</div>
 				</div>
 
@@ -670,7 +529,7 @@
 						<img class="frame-img" src="img/collage/collage04.jpg" alt="Collage_04" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
@@ -682,24 +541,6 @@
 						<p class="para-font frame-name">Discription</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
-						  <option value="select-size">Select Size</option>
-						  <option value="size-1">8 X 12</option>
-						  <option value="size-2">10 X 12</option>
-						  <option value="size-3">bigger</option>
-						</select>
-						<br>
-						<select>
-						  <option value="mat">Select Mat Color</option>
-						  <option value="red">red</option>
-						  <option value="blue">blue</option>
-						  <option value="green">green</option>
-						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
 					</div>
 				</div>
 
@@ -709,7 +550,7 @@
 						<img class="frame-img" src="img/collage/collage05.jpg" alt="Collage_05" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
-						<h4 class="frame-select">Expand Frame</h4>
+						<h4 class="frame-select">Details</h4>
 						</a>
 					</div>
 
@@ -721,24 +562,6 @@
 						<p class="para-font frame-name">Discription</p>
 						<p class="para-font frame-name">Product Number : 01</p>
 						<p class="para-font frame-price">Price</p>
-						<select>
-						  <option value="select-size">Select Size</option>
-						  <option value="size-1">8 X 12</option>
-						  <option value="size-2">10 X 12</option>
-						  <option value="size-3">bigger</option>
-						</select>
-						<br>
-						<select>
-						  <option value="mat">Select Mat Color</option>
-						  <option value="red">red</option>
-						  <option value="blue">blue</option>
-						  <option value="green">green</option>
-						</select>
-						<p class="para-font frame-name">Final price</p>
-						<form>
-			 			 <label for="count-no" class="para-font frame-name">number of frames</label>
-						 <input type="text" id="count" name="count" value="1">
-						</form>
 					</div>
 				</div>
 			</div>

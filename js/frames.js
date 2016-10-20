@@ -83,13 +83,6 @@ fbutton_12.addEventListener("click", frameExp);
 var close_12 = document.getElementById("close-12");
 close_12.addEventListener("click", closeExp);
 
-var fbutton_13 = document.getElementById("fbutton-13");
-var fexp_13 = document.getElementById("fexp-13");
-var fsmall_13 = document.getElementById("fsmall-13");
-fbutton_13.addEventListener("click", frameExp);
-var close_13 = document.getElementById("close-13");
-close_13.addEventListener("click", closeExp);
-
 //collage
 var fbutton_01c = document.getElementById("fbutton-01c");
 var fexp_01c = document.getElementById("fexp-01c");
@@ -127,8 +120,8 @@ var close_05c = document.getElementById("close-05c");
 close_05c.addEventListener("click", closeExp);
 
 function frameExp() {
-	var allExp = [fexp_1, fexp_2, fexp_3, fexp_4, fexp_5, fexp_6, fexp_7, fexp_8, fexp_9, fexp_10, fexp_11, fexp_12, fexp_13, fexp_01c, fexp_02c, fexp_03c, fexp_04c, fexp_05c ];
-	var allSmall = [fsmall_1, fsmall_2, fsmall_3, fsmall_4, fsmall_5, fsmall_6, fsmall_7, fsmall_8, fsmall_9, fsmall_10, fsmall_11, fsmall_12, fsmall_13, fsmall_01c, fsmall_02c, fsmall_03c, fsmall_04c, fsmall_05c];
+	var allExp = [fexp_1, fexp_2, fexp_3, fexp_4, fexp_5, fexp_6, fexp_7, fexp_8, fexp_9, fexp_10, fexp_11, fexp_12, fexp_01c, fexp_02c, fexp_03c, fexp_04c, fexp_05c ];
+	var allSmall = [fsmall_1, fsmall_2, fsmall_3, fsmall_4, fsmall_5, fsmall_6, fsmall_7, fsmall_8, fsmall_9, fsmall_10, fsmall_11, fsmall_12, fsmall_01c, fsmall_02c, fsmall_03c, fsmall_04c, fsmall_05c];
 	for (var i = 0; i < allExp.length; i++) {
 		allExp[i].className = "hide";
 		allSmall[i].className = "frames";
@@ -183,4 +176,14 @@ function pickLink () {
 	else {
 		pick.className = "hide";
 	}
+}
+
+function finalPrice(selId){
+	var x = document.getElementById(selId);
+	var y = x.attributes["data-p"].value;
+	var z = document.getElementById(y);
+
+	var price = x.value;
+	z.innerHTML = price;
+
 }

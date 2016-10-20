@@ -1,0 +1,23 @@
+.pos{
+	margin:20%;
+  	position: relative;
+ 	overflow: hidden;
+ 	height:550px;
+ 	width: auto;
+ 	left: 0;
+ 	top:0;
+
+}
+.pos-2{
+	position: absolute;               
+   left: 55%;                         
+   transform: translate(-50%, 0) ;
+   height: 100%;
+   width: auto;
+}
+
+.rotate{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
