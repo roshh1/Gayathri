@@ -33,28 +33,18 @@ function pickLink () {
 	}
 }
 
-var sil_thumb01 = document.getElementById("sil-thumb01");
-var sil_thumb02 = document.getElementById("sil-thumb02");
-var sil_thumb03 = document.getElementById("sil-thumb03");
-
-var sil_01 = document.getElementById("sil-01");
-var sil_02 = document.getElementById("sil-02");
-var sil_03 = document.getElementById("sil-03");
-
-sil_thumb01.addEventListener("click", imgExp);
-sil_thumb02.addEventListener("click", imgExp);
-sil_thumb03.addEventListener("click", imgExp);
-
-function imgExp () {
-	var allImg = [sil_01, sil_02, sil_03];	
+function imgExp (close, imgId) {
+	var closeSel = close;
+	var allImg = document.getElementsByClassName(close);	
 	for (var i = 0; i < allImg.length; i++) {
 		allImg[i].className = "hide";
 	}
-	var imgId = this.attributes["data-img"].value;
+	
 	var imgBig = document.getElementById(imgId);
 	
-	if ( imgBig.className === "hide") {
-		imgBig.className = "about-txt magniflier";
+	if ( imgBig.className = "hide") {
+		var selNam = closeSel + " about-txt magniflier";
+		imgBig.className = selNam ;
 	}
 	else {
 		imgBig.className = "hide";

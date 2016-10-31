@@ -44,7 +44,7 @@
 
 				<div id="frame-1">
 					<div id="fsmall-1" class="frames">
-						<a data-exp="fexp-1" data-hide="fsmall-1" id="fbutton-1" href="#frame1">
+						<a id="fbutton-1" href="#frame1" onclick="frameExp('fexp-1', 'fsmall-1')">
 						
 						<img class="frame-img" src="img/frames/frame001.jpg" alt="Balsam Fir" width="75%" height="50%"/>
 
@@ -54,9 +54,14 @@
 						</a>
 					</div>
 
-					<div id="fexp-1" class="hide frame-expand">
-					<div> <a name="frame1" data-exp="fexp-1" data-hide="fsmall-1" id="close-1" class="close" href="#">X</a></div>
-						<img class="fexp-img magniflier" src="img/frames/frame001.jpg" alt="Balsam Fir" width="50%" height="50%"/>
+					<div id="fexp-1" class="hide">
+					<div> <a name="frame1" id="close-1" class="close" href="#" onclick="closeExp('fexp-1', 'fsmall-1')" >X</a></div>
+
+						<img id="frame1_a" class="frame1close fexp-img magniflier" src="img/frames/frame001.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+						<img id="frame1_b" class="hide magniflier" src="img/frames/frame001a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+						<img id="frame1_c" class="hide magniflier" src="img/frames/frame001b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+						<img id="frame1_d" class="hide magniflier" src="img/frames/frame001c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 						<h4 class="frame-name">Balsam Fir</h4>
 						<p class="para-font frame-name">Classy brown with a touch of gold</p>
 						<p class="para-font frame-name">Product Number : </p>
@@ -75,12 +80,19 @@
 						  <option value="green">green</option>
 						</select>
 						<p class="para-font frame-name">Final price: <span id="Balsam-price">Select Size</span></p>
+
+						<div class=""> 
+						<a href="#frame1"><img src="img/frames/frame001.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame1close', 'frame1_a')" /></a>
+						<a href="#frame1"><img src="img/frames/frame001a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame1close', 'frame1_b')" /></a>
+						<a href="#frame1"><img src="img/frames/frame001b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame1close', 'frame1_c')"/></a>
+						<a href="#frame1"><img src="img/frames/frame001c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame1close', 'frame1_d')"/></a>
+						</div>
 					</div>
 				</div>
 
 				<div id="frame-2">
 					<div id="fsmall-2" class="frames">
-						<a data-exp="fexp-2" data-hide="fsmall-2" id="fbutton-2" href="#frame2">
+						<a id="fbutton-2" href="#frame2" onclick="frameExp('fexp-2', 'fsmall-2')">
 						<img class="frame-img" src="img/frames/frame002.jpg" alt="yellow birch" width="75%" height="50%"/>
 						<h4 class="frame-name">Yellow Birch</h4>
 						<p class="para-font frame-price">Price</p>
@@ -88,9 +100,13 @@
 						</a>
 					</div>
 
-					<div id="fexp-2" class="hide frame-expand">
-					<div> <a name="frame2" data-exp="fexp-2" data-hide="fsmall-2" id="close-2" class="close" href="#">X</a></div>
-						<img class="fexp-img magniflier" src="img/frames/frame002.jpg" alt="yellow birch" width="50%" height="50%"/>
+					<div id="fexp-2" class="hide">
+					<div> <a name="frame2" id="close-2" class="close" href="#" onclick="closeExp('fexp-2', 'fsmall-2')">X</a></div>
+						<img id="frame2_a" class="frame2close fexp-img magniflier" src="img/frames/frame002.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+						<img id="frame2_b" class="hide magniflier" src="img/frames/frame002a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+						<img id="frame2_c" class="hide magniflier" src="img/frames/frame002b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+						<img id="frame2_d" class="hide magniflier" src="img/frames/frame002c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 						<h4 class="frame-name">Yellow Birch</h4>
 						<p class="para-font frame-name">Elegant gold with a linear finish</p>
 						<p class="para-font frame-name">Product Number : 01</p>
@@ -109,12 +125,19 @@
 						  <option value="green">green</option>
 						</select>
 						<p class="para-font frame-name">Final price: <span id="yellowbirch-price">Select Size</span></p>
+
+						<div class=""> 
+						<a href="#frame2"><img src="img/frames/frame002.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame2close', 'frame2_a')" /></a>
+						<a href="#frame2"><img src="img/frames/frame002a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame2close', 'frame2_b')" /></a>
+						<a href="#frame2"><img src="img/frames/frame002b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame2close', 'frame2_c')"/></a>
+						<a href="#frame2"><img src="img/frames/frame002c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame2close', 'frame2_d')"/></a>
+						</div>
 					</div>
 				</div>
 
 				<div id="frame-3">
 					<div id="fsmall-3" class="frames">
-						<a data-exp="fexp-3" data-hide="fsmall-3" id="fbutton-3" href="#frame3">
+						<a id="fbutton-3" href="#frame3" onclick="frameExp('fexp-3', 'fsmall-3')">
 						<img class="frame-img" src="img/frames/frame003.jpg" alt="Lighting box" width="75%" height="50%"/>
 						<h4 class="frame-name">Sugar Maple</h4>
 						<p class="para-font frame-price">Price</p>
@@ -122,9 +145,13 @@
 						</a>
 					</div>
 
-					<div id="fexp-3" class="hide frame-expand">
-					<div> <a name="frame3" data-exp="fexp-3" data-hide="fsmall-3" id="close-3" class="close" href="#">X</a></div>
-						<img class="fexp-img magniflier" src="img/frames/frame003.jpg" alt="Lighting box" width="50%" height="50%"/>
+					<div id="fexp-3" class="hide">
+					<div> <a name="frame3" id="close-3" class="close" href="#" onclick="closeExp('fexp-3', 'fsmall-3')">X</a></div>
+						<img id="frame3_a" class="frame3close fexp-img magniflier" src="img/frames/frame003.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+						<img id="frame3_b" class="hide magniflier" src="img/frames/frame003a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+						<img id="frame3_c" class="hide magniflier" src="img/frames/frame003b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+						<img id="frame3_d" class="hide magniflier" src="img/frames/frame003c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 						<h4 class="frame-name">Sugar Maple</h4>
 						<p class="para-font frame-name">Classic brown with a beady edge</p>
 						<p class="para-font frame-name">Product Number : 01</p>
@@ -143,12 +170,20 @@
 						  <option value="green">green</option>
 						</select>
 						<p class="para-font frame-name">Final price: <span id="sugarmaple-price">Select Size</span></p>
+
+						<div class=""> 
+						<a href="#frame3"><img src="img/frames/frame003.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame3close', 'frame3_a')" /></a>
+						<a href="#frame3"><img src="img/frames/frame003a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame3close', 'frame3_b')" /></a>
+						<a href="#frame3"><img src="img/frames/frame003b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame3close', 'frame3_c')"/></a>
+						<a href="#frame3"><img src="img/frames/frame003c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame3close', 'frame3_d')"/></a>
+						</div>
+
 					</div>
 				</div>
 
 				<div id="frame-4">
 					<div id="fsmall-4" class="frames">
-						<a data-exp="fexp-4" data-hide="fsmall-4" id="fbutton-4" href="#frame4">
+						<a id="fbutton-4" href="#frame4" onclick="frameExp('fexp-4', 'fsmall-4')">
 						<img class="frame-img" src="img/frames/frame004.jpg" alt="Lighting box" width="75%" height="50%"/>
 						<h4 class="frame-name">Butternut Bark</h4>
 						<p class="para-font frame-price">Price</p>
@@ -156,9 +191,12 @@
 						</a>
 					</div>
 
-					<div id="fexp-4" class="hide frame-expand">
-							<div> <a name="frame4" data-exp="fexp-4" data-hide="fsmall-4" id="close-4" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame004.jpg" alt="Lighting box" width="50%" height="50%"/>
+					<div id="fexp-4" class="hide">
+							<div> <a name="frame4" id="close-4" class="close" href="#" onclick="closeExp('fexp-4', 'fsmall-4')">X</a></div>
+							<img id="frame4_a" class="frame4close fexp-img magniflier" src="img/frames/frame004.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame4_b" class="hide magniflier" src="img/frames/frame004a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame4_c" class="hide magniflier" src="img/frames/frame004b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame4_d" class="hide magniflier" src="img/frames/frame004c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
 							<h4 class="frame-name">Butternut Bark</h4>
 							<p class="para-font frame-name">The raw look with a finesse</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -177,13 +215,20 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="butternutbark-price">Select Size</span></p>
+							<div class=""> 
+							<a href="#frame4"><img src="img/frames/frame004.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame4close', 'frame4_a')" /></a>
+							<a href="#frame4"><img src="img/frames/frame004a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame4close', 'frame4_b')" /></a>
+							<a href="#frame4"><img src="img/frames/frame004b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame4close', 'frame4_c')"/></a>
+							<a href="#frame4"><img src="img/frames/frame004c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame4close', 'frame4_d')"/></a>
+							</div>
+
 						</div>
 					</div>
 				
 
 					<div id="frame-5">
 						<div id="fsmall-5" class="frames">
-							<a data-exp="fexp-5" data-hide="fsmall-5" id="fbutton-5" href="#frame5">
+							<a id="fbutton-5" href="#frame5" onclick="frameExp('fexp-5', 'fsmall-5')">
 							<img class="frame-img" src="img/frames/frame005.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Auric Cherrydrip </h4>
 							<p class="para-font frame-price">Price</p>
@@ -191,9 +236,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-5" class="hide frame-expand">
-						<div> <a name="frame5" data-exp="fexp-5" data-hide="fsmall-5" id="close-5" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame005.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-5" class="hide">
+						<div> <a name="frame5" id="close-5" class="close" href="#" onclick="closeExp('fexp-5', 'fsmall-5')">X</a></div>
+							<img id="frame5_a" class="frame5close fexp-img magniflier" src="img/frames/frame005.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame5_b" class="hide magniflier" src="img/frames/frame005a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame5_c" class="hide magniflier" src="img/frames/frame005b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame5_d" class="hide magniflier" src="img/frames/frame005c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Auric Cherrydrip </h4>
 							<p class="para-font frame-name">Shades of cherry with a golden lining</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -212,12 +261,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="auriccherrydrip-price">Select Size</span></p>
+							<div class=""> 
+							<a href="#frame5"><img src="img/frames/frame005.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame5close', 'frame5_a')" /></a>
+							<a href="#frame5"><img src="img/frames/frame005a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame5close', 'frame5_b')" /></a>
+							<a href="#frame5"><img src="img/frames/frame005b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame5close', 'frame5_c')"/></a>
+							<a href="#frame5"><img src="img/frames/frame005c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame5close', 'frame5_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-6">
 						<div id="fsmall-6" class="frames">
-							<a data-exp="fexp-6" data-hide="fsmall-6" id="fbutton-6" href="#frame6">
+							<a id="fbutton-6" href="#frame6" onclick="frameExp('fexp-6', 'fsmall-6')">
 							<img class="frame-img" src="img/frames/frame006.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Eastern Redcedar</h4>
 							<p class="para-font frame-price">Price</p>
@@ -225,9 +280,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-6" class="hide frame-expand">
-						<div> <a name="frame6" data-exp="fexp-6" data-hide="fsmall-6" id="close-6" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame006.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-6" class="hide">
+						<div> <a name="frame6" id="close-6" class="close" href="#" onclick="closeExp('fexp-6', 'fsmall-6')">X</a></div>
+							<img id="frame6_a" class="frame6close fexp-img magniflier" src="img/frames/frame006.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame6_b" class="hide magniflier" src="img/frames/frame006a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame6_c" class="hide magniflier" src="img/frames/frame006b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame6_d" class="hide magniflier" src="img/frames/frame006c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Eastern Redcedar</h4>
 							<p class="para-font frame-name">Intricately carved border for that majestic look</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -246,12 +305,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="easternredcedar-price">Select Size</span></p>
+							<div class=""> 
+							<a href="#frame6"><img src="img/frames/frame006.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame6close', 'frame6_a')" /></a>
+							<a href="#frame6"><img src="img/frames/frame006a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame6close', 'frame6_b')" /></a>
+							<a href="#frame6"><img src="img/frames/frame006b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame6close', 'frame6_c')"/></a>
+							<a href="#frame6"><img src="img/frames/frame006c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame6close', 'frame6_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-7">
 						<div id="fsmall-7" class="frames">
-							<a data-exp="fexp-7" data-hide="fsmall-7" id="fbutton-7" href="#frame7">
+							<a id="fbutton-7" href="#frame7" onclick="frameExp('fexp-7', 'fsmall-7')">
 							<img class="frame-img" src="img/frames/frame007.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Eastern Hemlock</h4>
 							<p class="para-font frame-price">Price</p>
@@ -259,9 +324,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-7" class="hide frame-expand">
-						<div> <a name="frame7" data-exp="fexp-7" data-hide="fsmall-7" id="close-7" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame007.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-7" class="hide">
+						<div> <a name="frame7" id="close-7" class="close" href="#" onclick="closeExp('fexp-7', 'fsmall-7')">X</a></div>
+							<img id="frame7_a" class="frame7close fexp-img magniflier" src="img/frames/frame007.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame7_b" class="hide magniflier" src="img/frames/frame007a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame7_c" class="hide magniflier" src="img/frames/frame007b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame7_d" class="hide magniflier" src="img/frames/frame007c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Eastern Hemlock</h4>
 							<p class="para-font frame-name">Classic brown with a royal touch</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -280,12 +349,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="easternhemlock-price">Select Size</span></p>
+							<div class=""> 
+							<a href="#frame7"><img src="img/frames/frame007.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame7close', 'frame7_a')" /></a>
+							<a href="#frame7"><img src="img/frames/frame007a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame7close', 'frame7_b')" /></a>
+							<a href="#frame7"><img src="img/frames/frame007b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame7close', 'frame7_c')"/></a>
+							<a href="#frame7"><img src="img/frames/frame007c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame7close', 'frame7_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-8">
 						<div id="fsmall-8" class="frames">
-							<a data-exp="fexp-8" data-hide="fsmall-8" id="fbutton-8" href="#frame8">
+							<a id="fbutton-8" href="#frame8" onclick="frameExp('fexp-8', 'fsmall-8')">
 							<img class="frame-img" src="img/frames/frame008.jpg" alt="Lighting box" width="75%" height="80%"/>
 							<h4 class="frame-name">Honey Locust</h4>
 							<p class="para-font frame-price">Price</p>
@@ -293,9 +368,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-8" class="hide frame-expand">
-							<div> <a name="frame8" data-exp="fexp-8" data-hide="fsmall-8" id="close-8" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame008.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-8" class="hide">
+							<div> <a name="frame8" id="close-8" class="close" href="#" onclick="closeExp('fexp-8', 'fsmall-8')">X</a></div>
+							<img id="frame8_a" class="frame8close fexp-img magniflier" src="img/frames/frame008.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame8_b" class="hide magniflier" src="img/frames/frame008a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame8_c" class="hide magniflier" src="img/frames/frame008b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame8_d" class="hide magniflier" src="img/frames/frame008c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Honey Locust</h4>
 							<p class="para-font frame-name">Exuberant yellow for a dynamic feel</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -314,12 +393,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="honeylocust-price">Select Size</span></p>
+							<div class=""> 
+							<a href="#frame8"><img src="img/frames/frame008.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame8close', 'frame8_a')" /></a>
+							<a href="#frame8"><img src="img/frames/frame008a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame8close', 'frame8_b')" /></a>
+							<a href="#frame8"><img src="img/frames/frame008b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame8close', 'frame8_c')"/></a>
+							<a href="#frame8"><img src="img/frames/frame008c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame8close', 'frame8_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-9">
 						<div id="fsmall-9" class="frames">
-							<a data-exp="fexp-9" data-hide="fsmall-9" id="fbutton-9" href="#frame9">
+							<a id="fbutton-9" href="#frame9" onclick="frameExp('fexp-9', 'fsmall-9')">
 							<img class="frame-img" src="img/frames/frame009.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Obsidian Carmine</h4>
 							<p class="para-font frame-price">Price</p>
@@ -327,9 +412,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-9" class="hide frame-expand">
-							<div> <a name="frame9" data-exp="fexp-9" data-hide="fsmall-9" id="close-9" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame009.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-9" class="hide">
+							<div> <a name="frame9" id="close-9" class="close" href="#" onclick="closeExp('fexp-9', 'fsmall-9')">X</a></div>
+							<img id="frame9_a" class="frame9close fexp-img magniflier" src="img/frames/frame009.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame9_b" class="hide magniflier" src="img/frames/frame009a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame9_c" class="hide magniflier" src="img/frames/frame009b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame9_d" class="hide magniflier" src="img/frames/frame009c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Obsidian Carmine</h4>
 							<p class="para-font frame-name">Shades of cherry with a black lining </p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -348,12 +437,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="obsidiancarmine-price">Select Size</span></p>
+							<div class=""> 
+							<a href="#frame9"><img src="img/frames/frame009.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame9close', 'frame9_a')" /></a>
+							<a href="#frame9"><img src="img/frames/frame009a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame9close', 'frame9_b')" /></a>
+							<a href="#frame9"><img src="img/frames/frame009b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame9close', 'frame9_c')"/></a>
+							<a href="#frame9"><img src="img/frames/frame009c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame9close', 'frame9_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-10">
 						<div id="fsmall-10" class="frames">
-							<a data-exp="fexp-10" data-hide="fsmall-10" id="fbutton-10" href="#frame10">
+							<a id="fbutton-10" href="#frame10" onclick="frameExp('fexp-10', 'fsmall-10')">
 							<img class="frame-img" src="img/frames/frame010.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Bloody Hawthorn</h4>
 							<p class="para-font frame-price">Price</p>
@@ -361,9 +456,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-10" class="hide frame-expand">
-							<div> <a name="frame10" data-exp="fexp-10" data-hide="fsmall-10" id="close-10" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame010.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-10" class="hide">
+							<div> <a name="frame10" id="close-10" class="close" href="#" onclick="closeExp('fexp-10', 'fsmall-10')">X</a></div>
+							<img id="frame10_a" class="frame10close fexp-img magniflier" src="img/frames/frame010.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame10_b" class="hide magniflier" src="img/frames/frame010a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame10_c" class="hide magniflier" src="img/frames/frame010b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame10_d" class="hide magniflier" src="img/frames/frame010c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Bloody Hawthorn</h4>
 							<p class="para-font frame-name">Double framed classic brown</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -382,12 +481,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="bloodyhawthorn-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame10"><img src="img/frames/frame010.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame10close', 'frame10_a')" /></a>
+							 <a href="#frame10"><img src="img/frames/frame010a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame10close', 'frame10_b')" /></a>
+							 <a href="#frame10"><img src="img/frames/frame010b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame10close', 'frame10_c')"/></a>
+							 <a href="#frame10"><img src="img/frames/frame010c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame10close', 'frame10_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-11">
 						<div id="fsmall-11" class="frames">
-							<a data-exp="fexp-11" data-hide="fsmall-11" id="fbutton-11" href="#frame11">
+							<a id="fbutton-11" href="#frame11" onclick="frameExp('fexp-11', 'fsmall-11')">
 							<img class="frame-img" src="img/frames/frame011.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Goldern Mahogany</h4>
 							<p class="para-font frame-price">Price</p>
@@ -395,9 +500,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-11" class="hide frame-expand">
-							<div> <a name="frame11" data-exp="fexp-11" data-hide="fsmall-11" id="close-11" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame011.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-11" class="hide">
+							<div> <a name="frame11" id="close-11" class="close" href="#" onclick="closeExp('fexp-11', 'fsmall-11')">X</a></div>
+							<img id="frame11_a" class="frame11close fexp-img magniflier" src="img/frames/frame011.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame11_b" class="hide magniflier" src="img/frames/frame011a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame11_c" class="hide magniflier" src="img/frames/frame011b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame11_d" class="hide magniflier" src="img/frames/frame011c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Goldern Mahogany</h4>
 							<p class="para-font frame-name">Ethnic gold finish to a classic brown base</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -416,12 +525,18 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="goldernmahogany-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame11"><img src="img/frames/frame011.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame11close', 'frame11_a')" /></a>
+							 <a href="#frame11"><img src="img/frames/frame011a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame11close', 'frame11_b')" /></a>
+							 <a href="#frame11"><img src="img/frames/frame011b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame11close', 'frame11_c')"/></a>
+							 <a href="#frame11"><img src="img/frames/frame011c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame11close', 'frame11_d')"/></a>
+							</div>
 						</div>
 					</div>
 
 					<div id="frame-12">
 						<div id="fsmall-12" class="frames">
-							<a data-exp="fexp-12" data-hide="fsmall-12" id="fbutton-12" href="#frame12">
+							<a id="fbutton-12" href="#frame12" onclick="frameExp('fexp-12', 'fsmall-12')">
 							<img class="frame-img" src="img/frames/frame012.jpg" alt="Lighting box" width="75%" height="50%"/>
 							<h4 class="frame-name">Sequoia Blaze</h4>
 							<p class="para-font frame-price">Price</p>
@@ -429,9 +544,13 @@
 							</a>
 						</div>
 
-						<div id="fexp-12" class="hide frame-expand">
-							<div> <a name="frame12" data-exp="fexp-12" data-hide="fsmall-12" id="close-12" class="close" href="#">X</a></div>
-							<img class="fexp-img magniflier" src="img/frames/frame012.jpg" alt="Lighting box" width="50%" height="50%"/>
+						<div id="fexp-12" class="hide">
+							<div> <a name="frame12" id="close-12" class="close" href="#" onclick="closeExp('fexp-12', 'fsmall-12')">X</a></div>
+							<img id="frame12_a" class="frame12close fexp-img magniflier" src="img/frames/frame012.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame12_b" class="hide magniflier" src="img/frames/frame012a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame12_c" class="hide magniflier" src="img/frames/frame012b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame12_d" class="hide magniflier" src="img/frames/frame012c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
 							<h4 class="frame-name">Sequoia Blaze</h4>
 							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
 							<p class="para-font frame-name">Product Number : 01</p>
@@ -450,10 +569,882 @@
 							  <option value="green">green</option>
 							</select>
 							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame12"><img src="img/frames/frame012.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame12close', 'frame12_a')" /></a>
+							 <a href="#frame12"><img src="img/frames/frame012a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame12close', 'frame12_b')" /></a>
+							 <a href="#frame12"><img src="img/frames/frame012b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame12close', 'frame12_c')"/></a>
+							 <a href="#frame12"><img src="img/frames/frame012c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame12close', 'frame12_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-13">
+						<div id="fsmall-13" class="frames">
+							<a id="fbutton-13" href="#frame13" onclick="frameExp('fexp-13', 'fsmall-13')">
+							<img class="frame-img" src="img/frames/frame013.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-13" class="hide">
+							<div> <a name="frame13" id="close-13" class="close" href="#" onclick="closeExp('fexp-13', 'fsmall-13')">X</a></div>
+							<img id="frame13_a" class="frame13close fexp-img magniflier" src="img/frames/frame013.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame13_b" class="hide magniflier" src="img/frames/frame013a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame13_c" class="hide magniflier" src="img/frames/frame013b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame13_d" class="hide magniflier" src="img/frames/frame013c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame13"><img src="img/frames/frame013.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame13close', 'frame13_a')" /></a>
+							 <a href="#frame13"><img src="img/frames/frame013a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame13close', 'frame13_b')" /></a>
+							 <a href="#frame13"><img src="img/frames/frame013b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame13close', 'frame13_c')"/></a>
+							 <a href="#frame13"><img src="img/frames/frame013c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame13close', 'frame13_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-14">
+						<div id="fsmall-14" class="frames">
+							<a id="fbutton-14" href="#frame14" onclick="frameExp('fexp-14', 'fsmall-14')">
+							<img class="frame-img" src="img/frames/frame014.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-14" class="hide">
+							<div> <a name="frame14" id="close-14" class="close" href="#" onclick="closeExp('fexp-14', 'fsmall-14')">X</a></div>
+							<img id="frame14_a" class="frame14close fexp-img magniflier" src="img/frames/frame014.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame14_b" class="hide magniflier" src="img/frames/frame014a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame14_c" class="hide magniflier" src="img/frames/frame014b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame14_d" class="hide magniflier" src="img/frames/frame014c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame14"><img src="img/frames/frame014.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame14close', 'frame14_a')" /></a>
+							 <a href="#frame14"><img src="img/frames/frame014a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame14close', 'frame14_b')" /></a>
+							 <a href="#frame14"><img src="img/frames/frame014b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame14close', 'frame14_c')"/></a>
+							 <a href="#frame14"><img src="img/frames/frame014c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame14close', 'frame14_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-15">
+						<div id="fsmall-15" class="frames">
+							<a id="fbutton-15" href="#frame15" onclick="frameExp('fexp-15', 'fsmall-15')">
+							<img class="frame-img" src="img/frames/frame015.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-15" class="hide">
+							<div> <a name="frame15" id="close-15" class="close" href="#" onclick="closeExp('fexp-15', 'fsmall-15')">X</a></div>
+							<img id="frame15_a" class="frame15close fexp-img magniflier" src="img/frames/frame015.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame15_b" class="hide magniflier" src="img/frames/frame015a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame15_c" class="hide magniflier" src="img/frames/frame015b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame15_d" class="hide magniflier" src="img/frames/frame015c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame15"><img src="img/frames/frame015.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame15close', 'frame15_a')" /></a>
+							 <a href="#frame15"><img src="img/frames/frame015a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame15close', 'frame15_b')" /></a>
+							 <a href="#frame15"><img src="img/frames/frame015b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame15close', 'frame15_c')"/></a>
+							 <a href="#frame15"><img src="img/frames/frame015c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame15close', 'frame15_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-16">
+						<div id="fsmall-16" class="frames">
+							<a id="fbutton-16" href="#frame16" onclick="frameExp('fexp-16', 'fsmall-16')">
+							<img class="frame-img" src="img/frames/frame016.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-16" class="hide">
+							<div> <a name="frame16" id="close-16" class="close" href="#" onclick="closeExp('fexp-16', 'fsmall-16')">X</a></div>
+							<img id="frame16_a" class="frame16close fexp-img magniflier" src="img/frames/frame016.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame16_b" class="hide magniflier" src="img/frames/frame016a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame16_c" class="hide magniflier" src="img/frames/frame016b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame16_d" class="hide magniflier" src="img/frames/frame016c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame16"><img src="img/frames/frame016.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame16close', 'frame16_a')" /></a>
+							 <a href="#frame16"><img src="img/frames/frame016a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame16close', 'frame16_b')" /></a>
+							 <a href="#frame16"><img src="img/frames/frame016b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame16close', 'frame16_c')"/></a>
+							 <a href="#frame16"><img src="img/frames/frame016c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame16close', 'frame16_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+				<div id="frame-17">
+						<div id="fsmall-17" class="frames">
+							<a id="fbutton-17" href="#frame17" onclick="frameExp('fexp-17', 'fsmall-17')">
+							<img class="frame-img" src="img/frames/frame017.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-17" class="hide">
+							<div> <a name="frame17" id="close-17" class="close" href="#" onclick="closeExp('fexp-17', 'fsmall-17')">X</a></div>
+
+							<img id="frame17_a" class="frame17close fexp-img magniflier" src="img/frames/frame017.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame17_b" class="hide magniflier" src="img/frames/frame017a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame17_c" class="hide magniflier" src="img/frames/frame017b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame17_d" class="hide magniflier" src="img/frames/frame017c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame17"><img src="img/frames/frame017.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame17close', 'frame17_a')" /></a>
+							 <a href="#frame17"><img src="img/frames/frame017a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame17close', 'frame17_b')" /></a>
+							 <a href="#frame17"><img src="img/frames/frame017b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame17close', 'frame17_c')"/></a>
+							 <a href="#frame17"><img src="img/frames/frame017c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame17close', 'frame17_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-18">
+						<div id="fsmall-18" class="frames">
+							<a id="fbutton-18" href="#frame18" onclick="frameExp('fexp-18', 'fsmall-18')">
+							<img class="frame-img" src="img/frames/frame018.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-18" class="hide">
+							<div> <a name="frame18" id="close-18" class="close" href="#" onclick="closeExp('fexp-18', 'fsmall-18')">X</a></div>
+							<img id="frame18_a" class="frame18close fexp-img magniflier" src="img/frames/frame018.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame18_b" class="hide magniflier" src="img/frames/frame018a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame18_c" class="hide magniflier" src="img/frames/frame018b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame18_d" class="hide magniflier" src="img/frames/frame018c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame18"><img src="img/frames/frame018.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame18close', 'frame18_a')" /></a>
+							 <a href="#frame18"><img src="img/frames/frame018a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame18close', 'frame18_b')" /></a>
+							 <a href="#frame18"><img src="img/frames/frame018b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame18close', 'frame18_c')"/></a>
+							 <a href="#frame18"><img src="img/frames/frame018c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame18close', 'frame18_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-19">
+						<div id="fsmall-19" class="frames">
+							<a id="fbutton-19" href="#frame19" onclick="frameExp('fexp-19', 'fsmall-19')">
+							<img class="frame-img" src="img/frames/frame019.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-19" class="hide">
+							<div> <a name="frame19" id="close-19" class="close" href="#" onclick="closeExp('fexp-19', 'fsmall-19')">X</a></div>
+							<img id="frame19_a" class="frame19close fexp-img magniflier" src="img/frames/frame019.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame19_b" class="hide magniflier" src="img/frames/frame019a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame19_c" class="hide magniflier" src="img/frames/frame019b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame19_d" class="hide magniflier" src="img/frames/frame019c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame19"><img src="img/frames/frame019.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame19close', 'frame19_a')" /></a>
+							 <a href="#frame19"><img src="img/frames/frame019a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame19close', 'frame19_b')" /></a>
+							 <a href="#frame19"><img src="img/frames/frame019b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame19close', 'frame19_c')"/></a>
+							 <a href="#frame19"><img src="img/frames/frame019c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame19close', 'frame19_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-20">
+						<div id="fsmall-20" class="frames">
+							<a id="fbutton-20" href="#frame20" onclick="frameExp('fexp-20', 'fsmall-20')">
+							<img class="frame-img" src="img/frames/frame020.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-20" class="hide">
+							<div> <a name="frame20" id="close-20" class="close" href="#" onclick="closeExp('fexp-20', 'fsmall-20')">X</a></div>
+							<img id="frame20_a" class="frame20close fexp-img magniflier" src="img/frames/frame020.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame20_b" class="hide magniflier" src="img/frames/frame020a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame20_c" class="hide magniflier" src="img/frames/frame020b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame20_d" class="hide magniflier" src="img/frames/frame020c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame20"><img src="img/frames/frame020.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame20close', 'frame20_a')" /></a>
+							 <a href="#frame20"><img src="img/frames/frame020a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame20close', 'frame20_b')" /></a>
+							 <a href="#frame20"><img src="img/frames/frame020b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame20close', 'frame20_c')"/></a>
+							 <a href="#frame20"><img src="img/frames/frame020c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame20close', 'frame20_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-21">
+						<div id="fsmall-21" class="frames">
+							<a id="fbutton-21" href="#frame21" onclick="frameExp('fexp-21', 'fsmall-21')">
+							<img class="frame-img" src="img/frames/frame021.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-21" class="hide">
+							<div> <a name="frame21" id="close-21" class="close" href="#" onclick="closeExp('fexp-21', 'fsmall-21')">X</a></div>
+							<img id="frame21_a" class="frame21close fexp-img magniflier" src="img/frames/frame021.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame21_b" class="hide magniflier" src="img/frames/frame021a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame21_c" class="hide magniflier" src="img/frames/frame021b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame21_d" class="hide magniflier" src="img/frames/frame021c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame21"><img src="img/frames/frame021.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame21close', 'frame21_a')" /></a>
+							 <a href="#frame21"><img src="img/frames/frame021a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame21close', 'frame21_b')" /></a>
+							 <a href="#frame21"><img src="img/frames/frame021b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame21close', 'frame21_c')"/></a>
+							 <a href="#frame21"><img src="img/frames/frame021c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame21close', 'frame21_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-22">
+						<div id="fsmall-22" class="frames">
+							<a id="fbutton-22" href="#frame22" onclick="frameExp('fexp-22', 'fsmall-22')">
+							<img class="frame-img" src="img/frames/frame022.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-22" class="hide">
+							<div> <a name="frame22" id="close-22" class="close" href="#" onclick="closeExp('fexp-22', 'fsmall-22')">X</a></div>
+							<img id="frame22_a" class="frame22close fexp-img magniflier" src="img/frames/frame022.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame22_b" class="hide magniflier" src="img/frames/frame022a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame22_c" class="hide magniflier" src="img/frames/frame022b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame22_d" class="hide magniflier" src="img/frames/frame022c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame22"><img src="img/frames/frame022.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame22close', 'frame22_a')" /></a>
+							 <a href="#frame22"><img src="img/frames/frame022a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame22close', 'frame22_b')" /></a>
+							 <a href="#frame22"><img src="img/frames/frame022b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame22close', 'frame22_c')"/></a>
+							 <a href="#frame22"><img src="img/frames/frame022c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame22close', 'frame22_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-23">
+						<div id="fsmall-23" class="frames">
+							<a id="fbutton-23" href="#frame23" onclick="frameExp('fexp-23', 'fsmall-23')">
+							<img class="frame-img" src="img/frames/frame023.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-23" class="hide">
+							<div> <a name="frame23" id="close-23" class="close" href="#" onclick="closeExp('fexp-23', 'fsmall-23')">X</a></div>
+							<img id="frame23_a" class="frame23close fexp-img magniflier" src="img/frames/frame023.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame23_b" class="hide magniflier" src="img/frames/frame023a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame23_c" class="hide magniflier" src="img/frames/frame023b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame23_d" class="hide magniflier" src="img/frames/frame023c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame23"><img src="img/frames/frame023.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame23close', 'frame23_a')" /></a>
+							 <a href="#frame23"><img src="img/frames/frame023a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame23close', 'frame23_b')" /></a>
+							 <a href="#frame23"><img src="img/frames/frame023b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame23close', 'frame23_c')"/></a>
+							 <a href="#frame23"><img src="img/frames/frame023c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame23close', 'frame23_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-24">
+						<div id="fsmall-24" class="frames">
+							<a id="fbutton-24" href="#frame24" onclick="frameExp('fexp-24', 'fsmall-24')">
+							<img class="frame-img" src="img/frames/frame024.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-24" class="hide">
+							<div> <a name="frame24" id="close-24" class="close" href="#" onclick="closeExp('fexp-24', 'fsmall-24')">X</a></div>
+							<img id="frame24_a" class="frame24close fexp-img magniflier" src="img/frames/frame024.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame24_b" class="hide magniflier" src="img/frames/frame024a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame24_c" class="hide magniflier" src="img/frames/frame024b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame24_d" class="hide magniflier" src="img/frames/frame024c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame24"><img src="img/frames/frame024.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame24close', 'frame24_a')" /></a>
+							 <a href="#frame24"><img src="img/frames/frame024a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame24close', 'frame24_b')" /></a>
+							 <a href="#frame24"><img src="img/frames/frame024b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame24close', 'frame24_c')"/></a>
+							 <a href="#frame24"><img src="img/frames/frame024c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame24close', 'frame24_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-25">
+						<div id="fsmall-25" class="frames">
+							<a id="fbutton-25" href="#frame25" onclick="frameExp('fexp-25', 'fsmall-25')">
+							<img class="frame-img" src="img/frames/frame025.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-25" class="hide">
+							<div> <a name="frame25" id="close-25" class="close" href="#" onclick="closeExp('fexp-25', 'fsmall-25')">X</a></div>
+							<img id="frame25_a" class="frame25close fexp-img magniflier" src="img/frames/frame025.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame25_b" class="hide magniflier" src="img/frames/frame025a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame25_c" class="hide magniflier" src="img/frames/frame025b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame25_d" class="hide magniflier" src="img/frames/frame011c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame25"><img src="img/frames/frame025.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame25close', 'frame25_a')" /></a>
+							 <a href="#frame25"><img src="img/frames/frame025a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame25close', 'frame25_b')" /></a>
+							 <a href="#frame25"><img src="img/frames/frame025b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame25close', 'frame25_c')"/></a>
+							 <a href="#frame25"><img src="img/frames/frame025c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame25close', 'frame25_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-26">
+						<div id="fsmall-26" class="frames">
+							<a id="fbutton-26" href="#frame26" onclick="frameExp('fexp-26', 'fsmall-26')">
+							<img class="frame-img" src="img/frames/frame026.jpg" alt="Lighting box" width="75%" height="50%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-26" class="hide">
+							<div> <a name="frame26" id="close-26" class="close" href="#" onclick="closeExp('fexp-26', 'fsmall-26')">X</a></div>
+							<img id="frame26_a" class="frame26close fexp-img magniflier" src="img/frames/frame026.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame26_b" class="hide magniflier" src="img/frames/frame026a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+							<img id="frame26_c" class="hide magniflier" src="img/frames/frame026b.jpg" alt="Balsam FirC" width="50%" height="50%"/>
+							<img id="frame26_d" class="hide magniflier" src="img/frames/frame026c.jpg" alt="Balsam FirD" width="50%" height="50%"/>
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame26"><img src="img/frames/frame026.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame26close', 'frame26_a')" /></a>
+							 <a href="#frame26"><img src="img/frames/frame026a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame26close', 'frame26_b')" /></a>
+							 <a href="#frame26"><img src="img/frames/frame026b.jpg" alt="Balsam FirC" width="10%" onclick="imgExp('frame26close', 'frame26_c')"/></a>
+							 <a href="#frame26"><img src="img/frames/frame026c.jpg" alt="Balsam FirD" width="10%" onclick="imgExp('frame26close', 'frame26_d')"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-27">
+						<div id="fsmall-27" class="frames">
+							<a id="fbutton-27" href="#frame27" onclick="frameExp('fexp-27', 'fsmall-27')">
+							<img class="frame-img" src="img/frames/frame027.jpg" alt="Lighting box" width="65%" height="25%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-27" class="hide">
+							<div> <a name="frame27" id="close-27" class="close" href="#" onclick="closeExp('fexp-27', 'fsmall-27')">X</a></div>
+							
+							<img id="frame27_a" class="frame27close fexp-img magniflier" src="img/frames/frame027.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame27_b" class="hide magniflier" src="img/frames/frame027a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame27"><img src="img/frames/frame027.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame27close', 'frame27_a')" /></a>
+							 <a href="#frame27"><img src="img/frames/frame027a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame27close', 'frame27_b')" /></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-28">
+						<div id="fsmall-28" class="frames">
+							<a id="fbutton-28" href="#frame28" onclick="frameExp('fexp-28', 'fsmall-28')">
+							<img class="frame-img" src="img/frames/frame028.jpg" alt="Lighting box" width="65%" height="25%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-28" class="hide">
+							<div> <a name="frame28" id="close-28" class="close" href="#" onclick="closeExp('fexp-28', 'fsmall-28')">X</a></div>
+							<img id="frame28_a" class="frame28close fexp-img magniflier" src="img/frames/frame028.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame28_b" class="hide magniflier" src="img/frames/frame028a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame28"><img src="img/frames/frame028.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame28close', 'frame28_a')" /></a>
+							 <a href="#frame28"><img src="img/frames/frame028a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame28close', 'frame28_b')" /></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-29">
+						<div id="fsmall-29" class="frames">
+							<a id="fbutton-29" href="#frame29" onclick="frameExp('fexp-29', 'fsmall-29')">
+							<img class="frame-img" src="img/frames/frame029.jpg" alt="Lighting box" width="65%" height="25%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-29" class="hide">
+							<div> <a name="frame29" id="close-29" class="close" href="#" onclick="closeExp('fexp-29', 'fsmall-29')">X</a></div>
+							<img id="frame29_a" class="frame29close fexp-img magniflier" src="img/frames/frame029.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame29_b" class="hide magniflier" src="img/frames/frame029a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame29"><img src="img/frames/frame029.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame29close', 'frame29_a')" /></a>
+							 <a href="#frame29"><img src="img/frames/frame029a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame29close', 'frame29_b')" /></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-30">
+						<div id="fsmall-30" class="frames">
+							<a id="fbutton-30" href="#frame30" onclick="frameExp('fexp-30', 'fsmall-30')">
+							<img class="frame-img" src="img/frames/frame030.jpg" alt="Lighting box" width="65%" height="25%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-30" class="hide">
+							<div> <a name="frame30" id="close-30" class="close" href="#" onclick="closeExp('fexp-30', 'fsmall-30')">X</a></div>
+							<img id="frame30_a" class="frame30close fexp-img magniflier" src="img/frames/frame030.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame30_b" class="hide magniflier" src="img/frames/frame030a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame30"><img src="img/frames/frame030.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame30close', 'frame30_a')" /></a>
+							 <a href="#frame30"><img src="img/frames/frame030a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame30close', 'frame30_b')" /></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-31">
+						<div id="fsmall-31" class="frames">
+							<a id="fbutton-31" href="#frame31" onclick="frameExp('fexp-31', 'fsmall-31')">
+							<img class="frame-img" src="img/frames/frame031.jpg" alt="Lighting box" width="65%" height="25%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-31" class="hide">
+							<div> <a name="frame31" id="close-31" class="close" href="#" onclick="closeExp('fexp-31', 'fsmall-31')">X</a></div>
+							<img id="frame31_a" class="frame31close fexp-img magniflier" src="img/frames/frame031.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame31_b" class="hide magniflier" src="img/frames/frame031a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							<div class=""> 
+							 <a href="#frame31"><img src="img/frames/frame031.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame31close', 'frame31_a')" /></a>
+							 <a href="#frame31"><img src="img/frames/frame031a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame31close', 'frame31_b')" /></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="frame-32">
+						<div id="fsmall-32" class="frames">
+							<a id="fbutton-32" href="#frame32" onclick="frameExp('fexp-32', 'fsmall-32')">
+							<img class="frame-img" src="img/frames/frame032.jpg" alt="Lighting box" width="65%" height="25%"/>
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-price">Price</p>
+							<h4 class="frame-select">Details</h4>
+							</a>
+						</div>
+
+						<div id="fexp-32" class="hide">
+							<div> <a name="frame32" id="close-32" class="close" href="#" onclick="closeExp('fexp-32', 'fsmall-32')">X</a></div>
+							<img id="frame32_a" class="frame32close fexp-img magniflier" src="img/frames/frame032.jpg" alt="Balsam FirA" width="50%" height="50%"/>
+							<img id="frame32_b" class="hide magniflier" src="img/frames/frame032a.jpg" alt="Balsam FirB" width="50%" height="50%" />
+
+							<h4 class="frame-name">Sequoia Blaze</h4>
+							<p class="para-font frame-name">'A perfect deal' of yellow and black</p>
+							<p class="para-font frame-name">Product Number : 01</p>
+							<p class="para-font frame-price">Price</p>
+							<select data-p="sequoiablaze-price" id="sequoia-blaze" onchange="finalPrice('sequoia-blaze')">
+							  <option value="select-size">Select Size</option>
+							  <option value="size-1">8 X 12</option>
+							  <option value="size-2">10 X 12</option>
+							  <option value="size-3">bigger</option>
+							</select>
+							<br>
+							<select>
+							  <option value="mat">Select Mat Color</option>
+							  <option value="red">red</option>
+							  <option value="blue">blue</option>
+							  <option value="green">green</option>
+							</select>
+							<p class="para-font frame-name">Final price: <span id="sequoiablaze-price">Select Size</span></p>
+							
+							<div class=""> 
+							 <a href="#frame32"><img src="img/frames/frame032.jpg" alt="Balsam FirA" width="10%" onclick="imgExp('frame32close', 'frame32_a')" /></a>
+							 <a href="#frame32"><img src="img/frames/frame032a.jpg" alt="Balsam FirB" width="10%" onclick="imgExp('frame32close', 'frame32_b')" /></a>
+							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 		<div id="collage-frames" class="hide">
@@ -462,7 +1453,7 @@
 
 				<div id="frame-01c">
 					<div id="fsmall-01c" class="frames">
-						<a data-exp="fexp-01c" data-hide="fsmall-01c" id="fbutton-01c" href="#collage1">
+						<a id="fbutton-01c" href="#collage1" onclick="frameExp('fexp-01c', 'fsmall-01c')">
 						<img class="frame-img" src="img/collage/collage01.jpg" alt="Collage_01" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
@@ -470,8 +1461,8 @@
 						</a>
 					</div>
 
-					<div id="fexp-01c" class="hide frame-expand">
-						<div> <a name="collage1" data-exp="fexp-01c" data-hide="fsmall-01c" id="close-01c" class="close" href="#">X</a>
+					<div id="fexp-01c" class="hide">
+						<div> <a name="collage1" id="close-01c" class="close" href="#" onclick="closeExp('fexp-01c', 'fsmall-01c')">X</a>
 						</div>
 						<img class="fexp-img magniflier" src="img/collage/collage01.jpg" alt="Collage_01" width="50%" height="50%"/>
 						<h4 class="frame-name">Collage arrangement 01</h4>
@@ -483,7 +1474,7 @@
 
 				<div id="frame-02c">
 					<div id="fsmall-02c" class="frames">
-						<a data-exp="fexp-02c" data-hide="fsmall-02c" id="fbutton-02c" href="#collage2">
+						<a id="fbutton-02c" href="#collage2" onclick="frameExp('fexp-02c', 'fsmall-02c')">
 						<img class="frame-img" src="img/collage/collage02.jpg" alt="Collage_02" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
@@ -491,8 +1482,8 @@
 						</a>
 					</div>
 
-					<div id="fexp-02c" class="hide frame-expand">
-						<div> <a name="collage2" data-exp="fexp-02c" data-hide="fsmall-02c" id="close-02c" class="close" href="#">X</a>
+					<div id="fexp-02c" class="hide">
+						<div> <a name="collage2" id="close-02c" class="close" href="#" onclick="closeExp('fexp-02c', 'fsmall-02c')">X</a>
 						</div>
 						<img class="fexp-img magniflier" src="img/collage/collage02.jpg" alt="Collage_02" width="50%" height="50%"/>
 						<h4 class="frame-name">Collage arrangement 01</h4>
@@ -504,7 +1495,7 @@
 
 				<div id="frame-03c">
 					<div id="fsmall-03c" class="frames">
-						<a data-exp="fexp-03c" data-hide="fsmall-03c" id="fbutton-03c" href="#collage3">
+						<a id="fbutton-03c" href="#collage3" onclick="frameExp('fexp-03c', 'fsmall-03c')">
 						<img class="frame-img" src="img/collage/collage03.jpg" alt="Collage_03" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
@@ -512,8 +1503,8 @@
 						</a>
 					</div>
 
-					<div id="fexp-03c" class="hide frame-expand">
-						<div> <a name="collage3" data-exp="fexp-03c" data-hide="fsmall-03c" id="close-03c" class="close" href="#">X</a>
+					<div id="fexp-03c" class="hide">
+						<div> <a name="collage3" id="close-03c" class="close" href="#" onclick="closeExp('fexp-03c', 'fsmall-03c')">X</a>
 						</div>
 						<img class="fexp-img magniflier" src="img/collage/collage03.jpg" alt="Collage_03" width="50%" height="50%"/>
 						<h4 class="frame-name">Collage arrangement 01</h4>
@@ -525,7 +1516,7 @@
 
 				<div id="frame-04c">
 					<div id="fsmall-04c" class="frames">
-						<a data-exp="fexp-04c" data-hide="fsmall-04c" id="fbutton-04c" href="#collage4">
+						<a id="fbutton-04c" href="#collage4" onclick="frameExp('fexp-04c', 'fsmall-04c')">
 						<img class="frame-img" src="img/collage/collage04.jpg" alt="Collage_04" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
@@ -533,8 +1524,8 @@
 						</a>
 					</div>
 
-					<div id="fexp-04c" class="hide frame-expand">
-						<div> <a name="collage4" data-exp="fexp-04c" data-hide="fsmall-04c" id="close-04c" class="close" href="#">X</a>
+					<div id="fexp-04c" class="hide">
+						<div> <a name="collage4" id="close-04c" class="close" href="#" onclick="closeExp('fexp-04c', 'fsmall-04c')">X</a>
 						</div>
 						<img class="fexp-img magniflier" src="img/collage/collage04.jpg" alt="Collage_04" width="50%" height="50%"/>
 						<h4 class="frame-name">Collage arrangement 01</h4>
@@ -546,7 +1537,7 @@
 
 				<div id="frame-05c">
 					<div id="fsmall-05c" class="frames">
-						<a data-exp="fexp-05c" data-hide="fsmall-05c" id="fbutton-05c" href="#collage5">
+						<a id="fbutton-05c" href="#collage5" onclick="frameExp('fexp-05c', 'fsmall-05c')">
 						<img class="frame-img" src="img/collage/collage05.jpg" alt="Collage_05" width="75%" height="50%"/>
 						<h4 class="frame-name">Third Frame</h4>
 						<p class="para-font frame-price">Price</p>
@@ -554,8 +1545,8 @@
 						</a>
 					</div>
 
-					<div id="fexp-05c" class="hide frame-expand">
-						<div> <a name="collage5" data-exp="fexp-05c" data-hide="fsmall-05c" id="close-05c" class="close" href="#">X</a>
+					<div id="fexp-05c" class="hide">
+						<div> <a name="collage5" id="close-05c" class="close" href="#" onclick="closeExp('fexp-05c', 'fsmall-05c')">X</a>
 						</div>
 						<img class="fexp-img magniflier" src="img/collage/collage05.jpg" alt="Collage_05" width="50%" height="50%"/>
 						<h4 class="frame-name">Collage arrangement 01</h4>

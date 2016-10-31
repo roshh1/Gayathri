@@ -17,7 +17,7 @@ function carousel() {
     x[myIndex-1].style.display = "block";
   dots[myIndex-1].style.background = "none" ;
     
-    setTimeout(carousel, 3000);
+    setTimeout(carousel, 5000);
 }
 carousel();
 
