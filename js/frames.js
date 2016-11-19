@@ -76,7 +76,26 @@ function finalPrice(selId){
 	var y = x.attributes["data-p"].value;
 	var z = document.getElementById(y);
 
-	var price = x.value;
-	z.innerHTML = price;
+	var a = x.attributes["data-mat"].value;
+	var b = document.getElementById(a);
 
+	var price = x.value;
+	var q= JSON.parse(price);
+	if (b.checked == false) {
+		z.innerHTML = q.value1;
+	} else {
+		z.innerHTML = q.value2;
+	}
+}
+function matCheck(a, b, c, d){
+	var check = a;
+	var close = b;
+	var open = c;
+	var change = d;
+	var x = document.getElementById(check);
+	if (x.checked == true){
+		imgExp (close, open);
+	}else{
+		imgExp (close, change);
+	}
 }

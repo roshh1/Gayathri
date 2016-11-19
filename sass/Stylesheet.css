@@ -28,7 +28,8 @@
 
 .para-font {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  text-align: justify; }
 
 .sec-font {
   font-size: 1.2em;
@@ -205,6 +206,9 @@ hr {
   padding: 20px; }
 
 /*frames css starts here*/
+.expand-align {
+  margin: 10%; }
+
 .frames {
   background-color: #bfae80;
   -webkit-border-radius: 12px;
@@ -265,7 +269,8 @@ hr {
   color: grey;
   font-family: cursive;
   margin-top: 5px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-size: 1.1em; }
 
 .frame-select {
   color: #bfae80;
@@ -562,7 +567,7 @@ hr {
   #mobile-menu {
     display: block; }
 
-  #sil-02, #sil-03 {
+  #sil-02, #sil-03, #dimond-02, #dimond-03 {
     display: block; } }
 
 /*# sourceMappingURL=Stylesheet.css.map */

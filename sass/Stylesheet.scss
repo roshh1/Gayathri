@@ -68,6 +68,7 @@ $shadowC : #000000;
 .para-font 
 	{font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 1.1em;
+	text-align:justify;
 }
 .sec-font
 {
@@ -258,6 +259,9 @@ hr
  
 
 /*frames css starts here*/
+.expand-align{
+	margin:10%;
+}
 .frames
 {
 	background-color: $txtBodyC;
@@ -328,6 +332,7 @@ margin-top:10px;
 	font-family: cursive;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	font-size: 1.1em;
 }
 .frame-select
 {
@@ -592,5 +597,5 @@ padding:20%;}
     	display:block;
     }
     
-#sil-02, #sil-03{display:block;}
+#sil-02, #sil-03, #dimond-02, #dimond-03 {display:block;}
 }
